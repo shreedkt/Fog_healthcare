@@ -1,0 +1,107 @@
+{% extends "dashboard/base.html" %} {% block title %}Home{% endblock %} 
+{% block content %}
+<!-- ── Page Header ─────────────────────────────────────────── -->
+<div class="page-header">
+  <div>
+    <h1 class="page-header__title">Dashboard</h1>
+    <p class="page-header__subtitle">
+      Welcome back, <strong>{{ user.username }}</strong>.
+    </p>
+  </div>
+  <div>
+    {% if user.role == "DOCTOR" %}
+    <span class="role-badge role-badge--doctor role-badge--lg">Doctor</span>
+    {% elif user.role == "NURSE" %}
+    <span class="role-badge role-badge--nurse role-badge--lg">Nurse</span>
+    {% elif user.role == "ADMIN" %}
+    <span class="role-badge role-badge--admin role-badge--lg">Admin</span>
+    {% endif %}
+  </div>
+</div>
+
+<!-- ── Stat Cards ──────────────────────────────────────────── -->
+<div class="row g-4 mb-4">
+  <div class="col-sm-6 col-lg-4">
+    <div class="stat-card">
+      <div class="stat-card__value">{{ stats.total_records }}</div>
+      <div class="stat-card__label">Medical Records</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4">
+    <div class="stat-card" style="border-left-color: var(--fg-success)">
+      <div class="stat-card__value">{{ stats.total_patients }}</div>
+      <div class="stat-card__label">Unique Patients</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4">
+    <div class="stat-card" style="border-left-color: var(--fg-warning)">
+      <div class="stat-card__value" style="text-transform: capitalize">
+        {{ user.role|lower }}
+      </div>
+      <div class="stat-card__label">Your Role</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Quick Actions ───────────────────────────────────────── -->
+<div class="fg-card mb-4">
+  <div class="fg-card__header">Quick Actions</div>
+  <div class="fg-card__body">
+    <a href="{% url 'dashboard:records_list' %}" class="btn-fg-outline me-2">
+      View Medical Records
+    </a>
+    {% if user.role == "ADMIN" %}
+    <a href="/admin/" class="btn-fg-outline btn-fg-outline--secondary me-2">
+      Admin Panel
+    </a>
+    {% endif %}
+  </div>
+</div>
+
+<!-- ── Architecture Overview ───────────────────────────────── -->
+<div class="fg-card">
+  <div class="fg-card__header">System Architecture</div>
+  <div class="fg-card__body">
+    <div class="row align-items-stretch text-center g-3">
+      <div class="col-md-3">
+        <div class="arch-node">
+          <div class="arch-node__title">&#x1F4F1; IoT Devices</div>
+          <p class="arch-node__desc">
+            Generate patient vitals and encrypt with AES-256-CBC. AES key
+            wrapped with Fog ECC public key.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-1 d-flex align-items-center justify-content-center">
+        <div class="arch-arrow">&rarr;</div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="arch-node arch-node--active">
+          <div class="arch-node__title">
+            &#x1F5A5;&#xFE0F; Fog Node (This Server)
+          </div>
+          <p class="arch-node__desc">
+            Receives encrypted records, verifies SHA-256 integrity, decrypts on
+            demand via ECDH, and forwards to cloud.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-1 d-flex align-items-center justify-content-center">
+        <div class="arch-arrow">&rarr;</div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="arch-node">
+          <div class="arch-node__title">&#x2601;&#xFE0F; Cloud Service</div>
+          <p class="arch-node__desc">
+            Re-encrypted data forwarded for long-term storage and analytics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,930 @@
+INFO 2026-02-23 13:45:22,746 autoreload 50509 8690543680 Watching for file changes with StatReloader
+INFO 2026-02-23 13:46:35,403 autoreload 50896 8690543680 Watching for file changes with StatReloader
+WARNING 2026-02-23 13:46:41,103 log 50896 6132199424 Not Found: /
+WARNING 2026-02-23 13:46:41,103 basehttp 50896 6132199424 "GET / HTTP/1.1" 404 2826
+WARNING 2026-02-23 13:46:41,229 log 50896 6132199424 Not Found: /favicon.ico
+WARNING 2026-02-23 13:46:41,229 basehttp 50896 6132199424 "GET /favicon.ico HTTP/1.1" 404 2877
+WARNING 2026-02-23 13:46:46,576 log 50896 6132199424 Not Found: /
+WARNING 2026-02-23 13:46:46,577 basehttp 50896 6132199424 "GET / HTTP/1.1" 404 2826
+INFO 2026-02-23 13:46:49,510 basehttp 50896 6132199424 "GET /admin HTTP/1.1" 301 0
+INFO 2026-02-23 13:46:49,521 basehttp 50896 6149025792 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-23 13:46:49,546 basehttp 50896 6149025792 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2026-02-23 13:46:49,583 basehttp 50896 6132199424 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2026-02-23 13:46:49,585 basehttp 50896 6149025792 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2026-02-23 13:46:49,586 basehttp 50896 6182678528 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-23 13:46:49,587 basehttp 50896 6165852160 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-23 13:46:49,587 basehttp 50896 6199504896 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2026-02-23 13:46:49,587 basehttp 50896 6216331264 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-23 13:46:49,589 basehttp 50896 6216331264 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-23 13:46:55,265 basehttp 50896 6216331264 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-23 13:46:55,293 basehttp 50896 6216331264 "GET /admin/ HTTP/1.1" 200 8767
+INFO 2026-02-23 13:46:55,313 basehttp 50896 6216331264 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-23 13:46:55,318 basehttp 50896 6216331264 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2026-02-23 13:46:55,323 basehttp 50896 6165852160 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2026-02-23 13:46:55,323 basehttp 50896 6199504896 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2026-02-23 13:47:00,042 basehttp 50896 6199504896 "GET /admin/users/user/ HTTP/1.1" 200 15432
+INFO 2026-02-23 13:47:00,057 basehttp 50896 6182678528 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-23 13:47:00,057 basehttp 50896 6199504896 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2026-02-23 13:47:00,057 basehttp 50896 6149025792 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-23 13:47:00,070 basehttp 50896 6132199424 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-23 13:47:00,073 basehttp 50896 6182678528 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-23 13:47:00,078 basehttp 50896 6149025792 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-23 13:47:00,080 basehttp 50896 6199504896 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-23 13:47:00,085 basehttp 50896 6149025792 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2026-02-23 13:47:00,085 basehttp 50896 6182678528 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2026-02-23 13:47:00,087 basehttp 50896 6216331264 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-23 13:47:00,088 basehttp 50896 6132199424 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-23 13:47:00,091 basehttp 50896 6132199424 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-23 13:47:00,116 basehttp 50896 6165852160 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-23 13:47:00,128 basehttp 50896 6132199424 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2026-02-23 13:47:00,128 basehttp 50896 6165852160 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2026-02-23 13:47:02,682 basehttp 50896 6165852160 "GET /admin/medical_records/medicalrecord/ HTTP/1.1" 200 11570
+INFO 2026-02-23 13:47:02,772 basehttp 50896 6165852160 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-23 13:47:05,351 basehttp 50896 6165852160 "GET /admin/auth/group/ HTTP/1.1" 200 10027
+INFO 2026-02-23 13:47:05,390 basehttp 50896 6165852160 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-23 13:47:06,552 basehttp 50896 6165852160 "GET /admin/audit/auditlog/ HTTP/1.1" 200 11531
+WARNING 2026-02-23 13:47:58,123 exceptions 50896 6233157632 API error 405 â€“ Method "GET" not allowed. (view=<apps.users.views.LoginView object at 0x10c762ba0>)
+WARNING 2026-02-23 13:47:58,124 log 50896 6233157632 Method Not Allowed: /api/v1/auth/login/
+WARNING 2026-02-23 13:47:58,124 basehttp 50896 6233157632 "GET /api/v1/auth/login/ HTTP/1.1" 405 95
+INFO 2026-02-23 13:47:58,269 services 50896 6233157632 User 'doctor1' (role=DOCTOR) logged in from 127.0.0.1
+INFO 2026-02-23 13:47:58,273 basehttp 50896 6233157632 "POST /api/v1/auth/login/ HTTP/1.1" 200 208
+INFO 2026-02-23 13:47:58,299 services 50896 6233157632 AUDIT | user=doctor1 action=CREATE record=df2a3384-8c28-498b-8175-5a59ff9afe9c ip=127.0.0.1 | -
+INFO 2026-02-23 13:47:58,301 services 50896 6233157632 Record df2a3384-8c28-498b-8175-5a59ff9afe9c created for patient b7bccd20-ea00-43e9-9bb3-60301b5c477e by doctor1
+INFO 2026-02-23 13:47:58,304 basehttp 50896 6233157632 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-02-23 13:47:58,322 services 50896 6233157632 AUDIT | user=doctor1 action=CREATE record=2f40d1ac-3a3e-4224-adc4-f3ff13bf4c67 ip=127.0.0.1 | -
+INFO 2026-02-23 13:47:58,323 services 50896 6233157632 Record 2f40d1ac-3a3e-4224-adc4-f3ff13bf4c67 created for patient 31435b68-ae2c-4cae-8d9f-949342cd7790 by doctor1
+INFO 2026-02-23 13:47:58,325 basehttp 50896 6233157632 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-02-23 13:47:58,343 services 50896 6233157632 AUDIT | user=doctor1 action=CREATE record=63c60f2d-c886-49ea-b4b5-4b7101be60cf ip=127.0.0.1 | -
+INFO 2026-02-23 13:47:58,344 services 50896 6233157632 Record 63c60f2d-c886-49ea-b4b5-4b7101be60cf created for patient 776b1d63-da3d-4059-9abb-7055c922dd2f by doctor1
+INFO 2026-02-23 13:47:58,346 basehttp 50896 6233157632 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-02-23 13:47:58,362 services 50896 6233157632 User 'doctor1' logged out.
+INFO 2026-02-23 13:47:58,362 basehttp 50896 6233157632 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
+INFO 2026-02-23 13:48:23,734 basehttp 50896 6165852160 "GET /admin/medical_records/medicalrecord/ HTTP/1.1" 200 15625
+INFO 2026-02-23 13:48:23,758 basehttp 50896 6216331264 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,759 basehttp 50896 6199504896 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,765 basehttp 50896 6199504896 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,767 basehttp 50896 6132199424 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,766 basehttp 50896 6182678528 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,768 basehttp 50896 6199504896 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,768 basehttp 50896 6132199424 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,768 basehttp 50896 6216331264 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,771 basehttp 50896 6132199424 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,768 basehttp 50896 6149025792 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,771 basehttp 50896 6182678528 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,772 basehttp 50896 6199504896 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,773 basehttp 50896 6182678528 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,774 basehttp 50896 6149025792 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,774 basehttp 50896 6216331264 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,775 basehttp 50896 6199504896 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2026-02-23 13:48:23,777 basehttp 50896 6199504896 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,778 basehttp 50896 6199504896 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:23,786 basehttp 50896 6165852160 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-23 13:48:24,993 basehttp 50896 6165852160 "GET /admin/medical_records/medicalrecord/ HTTP/1.1" 200 15625
+INFO 2026-02-23 13:48:25,070 basehttp 50896 6165852160 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-23 13:48:28,661 basehttp 50896 6165852160 "GET /admin/medical_records/medicalrecord/df2a3384-8c28-498b-8175-5a59ff9afe9c/change/ HTTP/1.1" 200 20166
+INFO 2026-02-23 13:48:28,673 basehttp 50896 6216331264 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-23 13:48:28,674 basehttp 50896 6165852160 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2026-02-23 13:48:28,679 basehttp 50896 6165852160 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2026-02-23 13:48:28,682 basehttp 50896 6165852160 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:28,684 basehttp 50896 6165852160 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:28,686 basehttp 50896 6165852160 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2026-02-23 13:48:28,688 basehttp 50896 6165852160 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-23 13:48:28,690 basehttp 50896 6165852160 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-23 13:48:28,699 basehttp 50896 6199504896 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-23 13:54:52,960 autoreload 50896 8690543680 /Users/pratik/projects/fog-encryption/config/settings/base.py changed, reloading.
+INFO 2026-02-23 13:54:53,438 autoreload 53507 8690543680 Watching for file changes with StatReloader
+WARNING 2026-02-23 13:55:45,364 log 53507 6127628288 Not Found: /
+WARNING 2026-02-23 13:55:45,365 basehttp 53507 6127628288 "GET / HTTP/1.1" 404 2979
+INFO 2026-02-23 13:55:48,570 basehttp 53507 6127628288 "GET /admin/ HTTP/1.1" 200 8767
+INFO 2026-02-23 13:55:48,580 basehttp 53507 6127628288 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:55:48,582 basehttp 53507 6144454656 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-23 13:55:48,584 basehttp 53507 6161281024 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:55:48,585 basehttp 53507 6178107392 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:55:48,587 basehttp 53507 6211760128 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:55:48,587 basehttp 53507 6194933760 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-23 13:55:48,588 basehttp 53507 6211760128 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2026-02-23 13:55:50,502 log 53507 6211760128 Not Found: /
+WARNING 2026-02-23 13:55:50,502 basehttp 53507 6211760128 "GET / HTTP/1.1" 404 2979
+INFO 2026-02-23 13:56:10,615 autoreload 54415 8690543680 Watching for file changes with StatReloader
+INFO 2026-02-23 13:56:42,324 autoreload 54746 8690543680 Watching for file changes with StatReloader
+WARNING 2026-02-23 13:56:44,997 log 54746 6171389952 Not Found: /
+WARNING 2026-02-23 13:56:44,998 basehttp 54746 6171389952 "GET / HTTP/1.1" 404 2979
+WARNING 2026-02-23 13:56:56,880 log 54746 6171389952 Not Found: /
+WARNING 2026-02-23 13:56:56,881 basehttp 54746 6171389952 "GET / HTTP/1.1" 404 2979
+INFO 2026-02-23 13:57:06,146 basehttp 54746 6171389952 "GET /dashboard HTTP/1.1" 301 0
+INFO 2026-02-23 13:57:06,195 basehttp 54746 6188216320 "GET /dashboard/ HTTP/1.1" 200 6097
+INFO 2026-02-23 13:57:16,191 basehttp 54746 6188216320 "GET /dashboard/records/ HTTP/1.1" 200 6392
+INFO 2026-02-23 13:57:18,466 services 54746 6188216320 AUDIT | user=admin action=READ record=63c60f2d-c886-49ea-b4b5-4b7101be60cf ip=127.0.0.1 | Dashboard record view (decrypted)
+ERROR 2026-02-23 13:57:18,503 log 54746 6188216320 Internal Server Error: /dashboard/records/63c60f2d-c886-49ea-b4b5-4b7101be60cf/
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'value|length_is:"0"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/views.py", line 176, in record_detail_view
+    return render(request, "dashboard/record_detail.html", context)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 197, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 610, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 706, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 616, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2026-02-23 13:57:18,512 basehttp 54746 6188216320 "GET /dashboard/records/63c60f2d-c886-49ea-b4b5-4b7101be60cf/ HTTP/1.1" 500 278576
+WARNING 2026-02-23 13:57:24,275 exceptions 54746 6205042688 API error 405 â€“ Method "GET" not allowed. (view=<apps.users.views.LoginView object at 0x109ed6510>)
+WARNING 2026-02-23 13:57:24,276 log 54746 6205042688 Method Not Allowed: /api/v1/auth/login/
+WARNING 2026-02-23 13:57:24,276 basehttp 54746 6205042688 "GET /api/v1/auth/login/ HTTP/1.1" 405 95
+INFO 2026-02-23 13:57:24,417 services 54746 6205042688 User 'doctor1' (role=DOCTOR) logged in from 127.0.0.1
+INFO 2026-02-23 13:57:24,420 basehttp 54746 6205042688 "POST /api/v1/auth/login/ HTTP/1.1" 200 208
+INFO 2026-02-23 13:57:24,447 services 54746 6205042688 AUDIT | user=doctor1 action=CREATE record=e8819dfd-4ab3-4a0a-b0e3-db2035436a1f ip=127.0.0.1 | -
+INFO 2026-02-23 13:57:24,447 services 54746 6205042688 Record e8819dfd-4ab3-4a0a-b0e3-db2035436a1f created for patient 859b465a-f215-4b5f-b69d-187b83b9fdac by doctor1
+INFO 2026-02-23 13:57:24,449 basehttp 54746 6205042688 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-02-23 13:57:24,468 services 54746 6205042688 AUDIT | user=doctor1 action=CREATE record=2a0c20a1-2d93-4764-89f8-9aa4b929c4c7 ip=127.0.0.1 | -
+INFO 2026-02-23 13:57:24,468 services 54746 6205042688 Record 2a0c20a1-2d93-4764-89f8-9aa4b929c4c7 created for patient a7f342f2-33cf-48b5-b3b0-d69ea07bfe26 by doctor1
+INFO 2026-02-23 13:57:24,470 basehttp 54746 6205042688 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-02-23 13:57:24,490 services 54746 6205042688 AUDIT | user=doctor1 action=CREATE record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | -
+INFO 2026-02-23 13:57:24,491 services 54746 6205042688 Record a39fe7ff-e297-435f-a8e6-5dd4ae814776 created for patient 5fdacba3-4b60-4a68-aa5d-d421b97dbb43 by doctor1
+INFO 2026-02-23 13:57:24,494 basehttp 54746 6205042688 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-02-23 13:57:24,509 services 54746 6205042688 User 'doctor1' logged out.
+INFO 2026-02-23 13:57:24,510 basehttp 54746 6205042688 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
+INFO 2026-02-23 13:57:37,248 basehttp 54746 6205042688 "GET /dashboard/?id=7c7bd348-7b9d-491d-9ba5-0871a7b5698e&vscodeBrowserReqId=1771855057242 HTTP/1.1" 302 0
+INFO 2026-02-23 13:57:37,251 basehttp 54746 6205042688 "GET /dashboard/login/?next=/dashboard/%3Fid%3D7c7bd348-7b9d-491d-9ba5-0871a7b5698e%26vscodeBrowserReqId%3D1771855057242 HTTP/1.1" 200 4069
+INFO 2026-02-23 13:58:53,436 services 54746 6188216320 AUDIT | user=admin action=READ record=63c60f2d-c886-49ea-b4b5-4b7101be60cf ip=127.0.0.1 | Dashboard record view (decrypted)
+ERROR 2026-02-23 13:58:53,475 log 54746 6188216320 Internal Server Error: /dashboard/records/63c60f2d-c886-49ea-b4b5-4b7101be60cf/
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'value|length_is:"0"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/views.py", line 176, in record_detail_view
+    return render(request, "dashboard/record_detail.html", context)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 197, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 610, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 706, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 616, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2026-02-23 13:58:53,487 basehttp 54746 6188216320 "GET /dashboard/records/63c60f2d-c886-49ea-b4b5-4b7101be60cf/ HTTP/1.1" 500 278576
+INFO 2026-02-23 13:59:53,914 autoreload 54746 8690543680 /Users/pratik/projects/fog-encryption/config/settings/base.py changed, reloading.
+INFO 2026-02-23 13:59:54,283 autoreload 55878 8690543680 Watching for file changes with StatReloader
+INFO 2026-02-23 14:01:01,270 basehttp 55878 6202847232 "GET / HTTP/1.1" 200 6047
+WARNING 2026-02-23 14:01:04,486 log 55878 6202847232 Not Found: /dashboard/
+WARNING 2026-02-23 14:01:04,486 basehttp 55878 6202847232 "GET /dashboard/ HTTP/1.1" 404 4175
+INFO 2026-02-23 14:01:48,042 basehttp 55878 6202847232 "GET / HTTP/1.1" 200 6047
+INFO 2026-02-23 14:01:48,899 basehttp 55878 6202847232 "GET / HTTP/1.1" 200 6047
+INFO 2026-02-23 14:04:29,982 basehttp 55878 6202847232 "GET /records/ HTTP/1.1" 200 7353
+WARNING 2026-02-23 14:04:30,007 basehttp 55878 6202847232 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:04:39,778 basehttp 55878 6219673600 "GET / HTTP/1.1" 200 6453
+WARNING 2026-02-23 14:04:39,791 basehttp 55878 6219673600 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:04:49,903 basehttp 55878 6202847232 "GET /records/ HTTP/1.1" 200 7353
+WARNING 2026-02-23 14:04:49,936 basehttp 55878 6202847232 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:04:51,233 services 55878 6219673600 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+ERROR 2026-02-23 14:04:51,266 log 55878 6219673600 Internal Server Error: /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'value|length_is:"0"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/views.py", line 176, in record_detail_view
+    return render(request, "dashboard/record_detail.html", context)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 197, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 610, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 706, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 616, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2026-02-23 14:04:51,270 basehttp 55878 6219673600 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 500 278410
+INFO 2026-02-23 14:05:03,709 services 55878 6219673600 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+ERROR 2026-02-23 14:05:03,745 log 55878 6219673600 Internal Server Error: /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'value|length_is:"0"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/views.py", line 176, in record_detail_view
+    return render(request, "dashboard/record_detail.html", context)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 197, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 519, in parse
+    raise self.error(token, e)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 610, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 706, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/base.py", line 616, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2026-02-23 14:05:03,751 basehttp 55878 6219673600 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 500 278410
+INFO 2026-02-23 14:05:37,394 services 55878 6219673600 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-02-23 14:05:37,405 basehttp 55878 6219673600 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 200 8111
+WARNING 2026-02-23 14:05:37,430 basehttp 55878 6219673600 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:06:12,459 services 55878 6219673600 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+ERROR 2026-02-23 14:06:12,486 log 55878 6219673600 Internal Server Error: /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/views.py", line 176, in record_detail_view
+    return render(request, "dashboard/record_detail.html", context)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dashboard/record_detail.html
+ERROR 2026-02-23 14:06:12,487 basehttp 55878 6219673600 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 500 100552
+INFO 2026-02-23 14:06:13,446 services 55878 6219673600 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+ERROR 2026-02-23 14:06:13,471 log 55878 6219673600 Internal Server Error: /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/
+Traceback (most recent call last):
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+  File "/Users/pratik/projects/fog-encryption/apps/dashboard/views.py", line 176, in record_detail_view
+    return render(request, "dashboard/record_detail.html", context)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/pratik/projects/fog-encryption/venv/lib/python3.14/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dashboard/record_detail.html
+ERROR 2026-02-23 14:06:13,472 basehttp 55878 6219673600 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 500 100552
+INFO 2026-02-23 14:06:35,188 services 55878 6219673600 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-02-23 14:06:35,196 basehttp 55878 6219673600 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 200 8655
+WARNING 2026-02-23 14:06:35,221 basehttp 55878 6219673600 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:06:46,533 basehttp 55878 6202847232 "GET /records/ HTTP/1.1" 200 8453
+WARNING 2026-02-23 14:06:46,549 basehttp 55878 6202847232 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:06:49,340 basehttp 55878 6236499968 "GET /records/ HTTP/1.1" 200 8453
+WARNING 2026-02-23 14:06:49,359 basehttp 55878 6236499968 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:06:50,218 basehttp 55878 6202847232 "GET /records/ HTTP/1.1" 200 8453
+WARNING 2026-02-23 14:06:50,228 basehttp 55878 6202847232 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:07:01,230 basehttp 55878 6236499968 "GET /records/ HTTP/1.1" 200 8453
+WARNING 2026-02-23 14:07:01,245 basehttp 55878 6236499968 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:07:01,710 basehttp 55878 6202847232 "GET /records/ HTTP/1.1" 200 8453
+WARNING 2026-02-23 14:07:01,722 basehttp 55878 6202847232 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:07:08,709 basehttp 55878 6236499968 "GET /records/ HTTP/1.1" 200 8453
+WARNING 2026-02-23 14:07:08,721 basehttp 55878 6236499968 "GET /static/dashboard/css/styles.css HTTP/1.1" 404 1886
+INFO 2026-02-23 14:07:20,723 autoreload 58738 8690543680 Watching for file changes with StatReloader
+INFO 2026-02-23 14:07:26,764 basehttp 58738 6125924352 "GET /records/ HTTP/1.1" 200 8453
+INFO 2026-02-23 14:07:26,779 basehttp 58738 6125924352 "GET /static/dashboard/css/styles.css HTTP/1.1" 200 16589
+INFO 2026-02-23 14:07:28,276 basehttp 58738 6125924352 "GET /records/ HTTP/1.1" 200 8453
+INFO 2026-02-23 14:07:30,598 services 58738 6125924352 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-02-23 14:07:30,601 basehttp 58738 6125924352 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 200 8655
+INFO 2026-02-23 14:07:39,470 basehttp 58738 6125924352 "GET /records/ HTTP/1.1" 200 8453
+INFO 2026-02-23 14:07:42,951 basehttp 58738 6125924352 "GET / HTTP/1.1" 200 6453
+INFO 2026-02-23 14:08:17,117 basehttp 58738 6125924352 "GET /admin/ HTTP/1.1" 200 8767
+INFO 2026-02-23 14:08:17,133 basehttp 58738 6125924352 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,135 basehttp 58738 6142750720 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,137 basehttp 58738 6159577088 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,136 basehttp 58738 6176403456 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,138 basehttp 58738 6210056192 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,139 basehttp 58738 6193229824 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,142 basehttp 58738 6193229824 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,158 basehttp 58738 6210056192 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,158 basehttp 58738 6193229824 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:17,158 basehttp 58738 6159577088 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:19,193 basehttp 58738 6159577088 "GET /records/ HTTP/1.1" 200 8453
+INFO 2026-02-23 14:08:19,204 basehttp 58738 6159577088 "GET /static/dashboard/css/styles.css HTTP/1.1" 304 0
+INFO 2026-02-23 14:08:21,147 services 58738 6159577088 AUDIT | user=admin action=READ record=a39fe7ff-e297-435f-a8e6-5dd4ae814776 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-02-23 14:08:21,150 basehttp 58738 6159577088 "GET /records/a39fe7ff-e297-435f-a8e6-5dd4ae814776/ HTTP/1.1" 200 8655
+INFO 2026-02-23 14:08:24,604 views 58738 6159577088 User 'admin' logged out via dashboard.
+INFO 2026-02-23 14:08:24,605 basehttp 58738 6159577088 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-02-23 14:08:24,609 basehttp 58738 6159577088 "GET /login/ HTTP/1.1" 200 3802
+INFO 2026-02-23 14:08:50,702 views 58738 6159577088 User 'doctor1' logged in via dashboard.
+INFO 2026-02-23 14:08:50,705 basehttp 58738 6159577088 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-02-23 14:08:50,723 basehttp 58738 6159577088 "GET / HTTP/1.1" 200 6353
+INFO 2026-02-23 14:09:37,543 basehttp 58738 6159577088 "GET /records/ HTTP/1.1" 200 8457
+INFO 2026-02-23 14:09:37,559 basehttp 58738 6159577088 "GET /static/dashboard/css/styles.css HTTP/1.1" 304 0
+INFO 2026-02-23 14:09:39,473 services 58738 6159577088 AUDIT | user=doctor1 action=READ record=2a0c20a1-2d93-4764-89f8-9aa4b929c4c7 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-02-23 14:09:39,477 basehttp 58738 6159577088 "GET /records/2a0c20a1-2d93-4764-89f8-9aa4b929c4c7/ HTTP/1.1" 200 8657
+INFO 2026-02-23 14:09:56,369 views 58738 6159577088 User 'doctor1' logged out via dashboard.
+INFO 2026-02-23 14:09:56,371 basehttp 58738 6159577088 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-02-23 14:09:56,374 basehttp 58738 6159577088 "GET /login/ HTTP/1.1" 200 3802
+INFO 2026-03-09 21:42:04,404 autoreload 13352 9728 Watching for file changes with StatReloader
+INFO 2026-03-09 21:42:13,912 basehttp 13352 12508 "GET / HTTP/1.1" 302 0
+ERROR 2026-03-09 21:42:14,345 log 13352 12508 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\apps\dashboard\views.py", line 70, in login_view
+    return render(request, "dashboard/login.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 197, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 519, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 578, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 61: 'endblock'. Did you forget to register or load this tag?
+ERROR 2026-03-09 21:42:14,450 basehttp 13352 12508 "GET /login/?next=/ HTTP/1.1" 500 163644
+WARNING 2026-03-09 21:42:15,733 log 13352 12508 Not Found: /favicon.ico
+WARNING 2026-03-09 21:42:15,751 basehttp 13352 12508 "GET /favicon.ico HTTP/1.1" 404 4178
+INFO 2026-03-09 21:45:49,044 basehttp 13352 12508 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-03-09 21:45:49,404 basehttp 13352 12508 "GET /static/dashboard/css/styles.css HTTP/1.1" 200 16589
+INFO 2026-03-09 21:46:34,469 views 13352 12508 User 'doctor1' logged in via dashboard.
+INFO 2026-03-09 21:46:34,489 basehttp 13352 12508 "POST /login/ HTTP/1.1" 302 0
+ERROR 2026-03-09 21:46:34,653 log 13352 12508 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\apps\dashboard\views.py", line 94, in home_view
+    return render(request, "dashboard/home.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 197, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 519, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 578, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 107: 'endblock'. Did you forget to register or load this tag?
+ERROR 2026-03-09 21:46:34,698 basehttp 13352 12508 "GET / HTTP/1.1" 500 178077
+INFO 2026-03-09 21:47:33,870 basehttp 13352 12508 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 21:48:59,649 autoreload 516 10876 Watching for file changes with StatReloader
+WARNING 2026-03-09 21:49:14,999 exceptions 516 4392 API error 405 – Method "GET" not allowed. (view=<apps.users.views.LoginView object at 0x0000023143CECA70>)
+WARNING 2026-03-09 21:49:15,003 log 516 4392 Method Not Allowed: /api/v1/auth/login/
+WARNING 2026-03-09 21:49:15,006 basehttp 516 4392 "GET /api/v1/auth/login/ HTTP/1.1" 405 95
+INFO 2026-03-09 21:49:17,943 services 516 4392 User 'doctor1' (role=DOCTOR) logged in from 127.0.0.1
+INFO 2026-03-09 21:49:17,962 basehttp 516 4392 "POST /api/v1/auth/login/ HTTP/1.1" 200 208
+INFO 2026-03-09 21:49:18,052 services 516 4392 AUDIT | user=doctor1 action=CREATE record=279eed72-9749-46d9-a19e-1978e186ed54 ip=127.0.0.1 | -
+INFO 2026-03-09 21:49:18,061 services 516 4392 Record 279eed72-9749-46d9-a19e-1978e186ed54 created for patient 150e2da7-92cf-4857-87f0-6801f3615a95 by doctor1
+INFO 2026-03-09 21:49:18,076 basehttp 516 4392 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-09 21:49:18,114 services 516 4392 AUDIT | user=doctor1 action=CREATE record=885511ff-c26b-4750-aec7-7f93b8777b70 ip=127.0.0.1 | -
+INFO 2026-03-09 21:49:18,130 services 516 4392 Record 885511ff-c26b-4750-aec7-7f93b8777b70 created for patient 0a898903-3354-4cfe-9851-cc316f158dbd by doctor1
+INFO 2026-03-09 21:49:18,153 basehttp 516 4392 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-09 21:49:18,196 services 516 4392 AUDIT | user=doctor1 action=CREATE record=741dfaff-a302-41ca-912c-1d5b0d4a6744 ip=127.0.0.1 | -
+INFO 2026-03-09 21:49:18,205 services 516 4392 Record 741dfaff-a302-41ca-912c-1d5b0d4a6744 created for patient 4f684116-49a2-4824-9a3a-5940b8465501 by doctor1
+INFO 2026-03-09 21:49:18,231 basehttp 516 4392 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-09 21:49:18,264 services 516 4392 User 'doctor1' logged out.
+INFO 2026-03-09 21:49:18,266 basehttp 516 4392 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
+INFO 2026-03-09 21:49:19,232 basehttp 516 9596 "GET / HTTP/1.1" 200 6773
+ERROR 2026-03-09 21:49:43,886 log 516 9596 Internal Server Error: /records/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\apps\dashboard\decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\apps\dashboard\views.py", line 115, in records_list_view
+    return render(request, "dashboard/records_list.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 197, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 519, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 519, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 517, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 524, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\user\Desktop\adaptive_project\venv\Lib\site-packages\django\template\base.py", line 591, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 1: 'block'. Looking for one of: endblock.
+ERROR 2026-03-09 21:49:43,949 basehttp 516 9596 "GET /records/ HTTP/1.1" 500 190680
+INFO 2026-03-09 21:50:38,237 basehttp 516 9596 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 21:50:42,976 services 516 9596 AUDIT | user=doctor1 action=READ record=741dfaff-a302-41ca-912c-1d5b0d4a6744 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-03-09 21:50:43,016 basehttp 516 9596 "GET /records/741dfaff-a302-41ca-912c-1d5b0d4a6744/ HTTP/1.1" 200 9229
+INFO 2026-03-09 21:51:54,156 services 516 9596 AUDIT | user=doctor1 action=READ record=741dfaff-a302-41ca-912c-1d5b0d4a6744 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-03-09 21:51:54,211 basehttp 516 9596 "GET /records/741dfaff-a302-41ca-912c-1d5b0d4a6744/ HTTP/1.1" 200 9182
+INFO 2026-03-09 21:52:06,836 basehttp 516 9596 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 21:52:10,795 basehttp 516 9596 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 21:52:12,669 basehttp 516 9596 "GET /records/?patient_id= HTTP/1.1" 200 7374
+INFO 2026-03-09 21:52:17,227 basehttp 516 9596 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 21:52:25,012 basehttp 516 9596 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 21:52:27,945 basehttp 516 9596 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 22:07:25,368 basehttp 516 6564 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 22:56:12,462 basehttp 516 8452 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 22:56:18,176 basehttp 516 8452 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 22:56:24,334 services 516 8452 AUDIT | user=doctor1 action=READ record=741dfaff-a302-41ca-912c-1d5b0d4a6744 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-03-09 22:56:24,354 basehttp 516 8452 "GET /records/741dfaff-a302-41ca-912c-1d5b0d4a6744/ HTTP/1.1" 200 9182
+INFO 2026-03-09 23:19:17,332 services 516 6648 AUDIT | user=doctor1 action=READ record=741dfaff-a302-41ca-912c-1d5b0d4a6744 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-03-09 23:19:17,351 basehttp 516 6648 "GET /records/741dfaff-a302-41ca-912c-1d5b0d4a6744/ HTTP/1.1" 200 9182
+INFO 2026-03-09 23:19:23,068 basehttp 516 6648 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 23:19:51,098 basehttp 516 6648 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 23:20:04,100 basehttp 516 6648 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 23:20:05,119 basehttp 516 6648 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 23:20:07,449 basehttp 516 6648 "GET /records/ HTTP/1.1" 200 7374
+INFO 2026-03-09 23:20:11,261 basehttp 516 6648 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 23:44:18,910 autoreload 12532 6868 Watching for file changes with StatReloader
+WARNING 2026-03-09 23:44:50,919 exceptions 12532 4896 API error 405 – Method "GET" not allowed. (view=<apps.users.views.LoginView object at 0x0000023FE32DA2A0>)
+WARNING 2026-03-09 23:44:50,928 log 12532 4896 Method Not Allowed: /api/v1/auth/login/
+WARNING 2026-03-09 23:44:50,930 basehttp 12532 4896 "GET /api/v1/auth/login/ HTTP/1.1" 405 95
+INFO 2026-03-09 23:44:53,054 services 12532 4896 User 'doctor1' (role=DOCTOR) logged in from 127.0.0.1
+INFO 2026-03-09 23:44:53,081 basehttp 12532 4896 "POST /api/v1/auth/login/ HTTP/1.1" 200 208
+INFO 2026-03-09 23:44:53,140 services 12532 4896 AUDIT | user=doctor1 action=CREATE record=3d9e566b-5ed8-4d8f-98ec-5090174fddc9 ip=127.0.0.1 | -
+INFO 2026-03-09 23:44:53,152 services 12532 4896 Record 3d9e566b-5ed8-4d8f-98ec-5090174fddc9 created for patient d952c5c1-999e-468e-957d-2fe5c4ae1668 by doctor1
+INFO 2026-03-09 23:44:53,171 basehttp 12532 4896 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-09 23:44:53,199 services 12532 4896 AUDIT | user=doctor1 action=CREATE record=65a2a04c-ee0e-402b-88ef-7c0e12742ce2 ip=127.0.0.1 | -
+INFO 2026-03-09 23:44:53,209 services 12532 4896 Record 65a2a04c-ee0e-402b-88ef-7c0e12742ce2 created for patient 013911ea-e774-45f5-9393-8c798428674d by doctor1
+INFO 2026-03-09 23:44:53,230 basehttp 12532 4896 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-09 23:44:53,271 services 12532 4896 AUDIT | user=doctor1 action=CREATE record=e727a252-6421-4653-93e0-369c54f08cd0 ip=127.0.0.1 | -
+INFO 2026-03-09 23:44:53,289 services 12532 4896 Record e727a252-6421-4653-93e0-369c54f08cd0 created for patient 9e4f8cc6-f54f-4cee-bf1f-0645307b6a0c by doctor1
+INFO 2026-03-09 23:44:53,309 basehttp 12532 4896 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-09 23:44:53,353 services 12532 4896 User 'doctor1' logged out.
+INFO 2026-03-09 23:44:53,355 basehttp 12532 4896 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
+INFO 2026-03-09 23:44:59,634 basehttp 12532 10100 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-09 23:45:11,677 basehttp 12532 10100 "GET /records/ HTTP/1.1" 200 9621
+INFO 2026-03-09 23:45:14,731 views 12532 10100 User 'doctor1' logged out via dashboard.
+INFO 2026-03-09 23:45:14,734 basehttp 12532 10100 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-03-09 23:45:14,749 basehttp 12532 10100 "GET /login/ HTTP/1.1" 200 4052

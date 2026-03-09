@@ -1,0 +1,24 @@
+# ──────────────────────────────────────────────────────────────
+# Secure Fog-Based Healthcare Data Sharing
+# Using Lightweight Encryption
+# ──────────────────────────────────────────────────────────────
+
+# Python / Django
+Django>=5.1,<6.0
+djangorestframework>=3.15,<4.0
+mysqlclient>=2.2,<3.0
+
+# Cryptography
+cryptography>=43.0,<44.0
+
+# Environment
+python-dotenv>=1.0,<2.0
+
+# HTTP client (cloud gateway)
+requests>=2.32,<3.0
+
+# Rate limiting
+django-ratelimit>=4.1,<5.0
+
+# Dev / Testing
+ipython>=8.0
