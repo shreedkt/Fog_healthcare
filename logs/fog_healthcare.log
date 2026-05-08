@@ -928,3 +928,80 @@ INFO 2026-03-09 23:45:11,677 basehttp 12532 10100 "GET /records/ HTTP/1.1" 200 9
 INFO 2026-03-09 23:45:14,731 views 12532 10100 User 'doctor1' logged out via dashboard.
 INFO 2026-03-09 23:45:14,734 basehttp 12532 10100 "POST /logout/ HTTP/1.1" 302 0
 INFO 2026-03-09 23:45:14,749 basehttp 12532 10100 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-03-09 23:51:40,334 basehttp 12532 12944 "GET /login/ HTTP/1.1" 200 3712
+INFO 2026-03-09 23:55:39,713 autoreload 12532 6868 C:\Users\user\Desktop\Fog_healthcare\manage.py changed, reloading.
+INFO 2026-03-13 23:23:15,218 autoreload 11152 15184 Watching for file changes with StatReloader
+INFO 2026-03-13 23:24:03,854 basehttp 11152 4728 "GET / HTTP/1.1" 302 0
+INFO 2026-03-13 23:24:04,136 basehttp 11152 4728 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-03-13 23:24:04,236 basehttp 11152 4728 "GET /static/dashboard/css/styles.css HTTP/1.1" 304 0
+WARNING 2026-03-13 23:24:05,082 log 11152 4728 Not Found: /favicon.ico
+WARNING 2026-03-13 23:24:05,085 basehttp 11152 4728 "GET /favicon.ico HTTP/1.1" 404 4178
+INFO 2026-03-13 23:27:41,024 autoreload 12508 8700 Watching for file changes with StatReloader
+WARNING 2026-03-13 23:28:00,307 exceptions 12508 6924 API error 405 – Method "GET" not allowed. (view=<apps.users.views.LoginView object at 0x000001BC70DE7A10>)
+WARNING 2026-03-13 23:28:00,307 log 12508 6924 Method Not Allowed: /api/v1/auth/login/
+WARNING 2026-03-13 23:28:00,329 basehttp 12508 6924 "GET /api/v1/auth/login/ HTTP/1.1" 405 95
+INFO 2026-03-13 23:28:02,761 services 12508 6924 User 'doctor1' (role=DOCTOR) logged in from 127.0.0.1
+INFO 2026-03-13 23:28:02,815 basehttp 12508 6924 "POST /api/v1/auth/login/ HTTP/1.1" 200 208
+INFO 2026-03-13 23:28:02,921 services 12508 6924 AUDIT | user=doctor1 action=CREATE record=d4879695-bd50-46f3-ac82-6b081772a151 ip=127.0.0.1 | -
+INFO 2026-03-13 23:28:02,933 services 12508 6924 Record d4879695-bd50-46f3-ac82-6b081772a151 created for patient 8a6d9783-2f36-4b78-b070-176a46c60b9c by doctor1
+INFO 2026-03-13 23:28:02,948 basehttp 12508 6924 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:28:02,973 services 12508 6924 AUDIT | user=doctor1 action=CREATE record=1e8800b8-9064-426c-9516-a13b902e26c7 ip=127.0.0.1 | -
+INFO 2026-03-13 23:28:02,991 services 12508 6924 Record 1e8800b8-9064-426c-9516-a13b902e26c7 created for patient c502969d-ee13-422d-9fdf-a2277c02dbec by doctor1
+INFO 2026-03-13 23:28:02,992 basehttp 12508 6924 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:28:03,034 services 12508 6924 AUDIT | user=doctor1 action=CREATE record=b3759693-5a44-4760-9c9b-4444c5f8978e ip=127.0.0.1 | -
+INFO 2026-03-13 23:28:03,045 services 12508 6924 Record b3759693-5a44-4760-9c9b-4444c5f8978e created for patient 41e6c53e-924a-4fd4-9961-692a9aa84d0b by doctor1
+INFO 2026-03-13 23:28:03,062 basehttp 12508 6924 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:28:03,085 services 12508 6924 User 'doctor1' logged out.
+INFO 2026-03-13 23:28:03,087 basehttp 12508 6924 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
+INFO 2026-03-13 23:28:13,225 basehttp 12508 14816 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-03-13 23:29:23,199 views 12508 14816 User 'doctor1' logged in via dashboard.
+INFO 2026-03-13 23:29:23,212 basehttp 12508 14816 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-03-13 23:29:23,273 basehttp 12508 14816 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-13 23:29:31,375 basehttp 12508 14816 "GET /records/ HTTP/1.1" 200 11868
+INFO 2026-03-13 23:29:33,784 services 12508 14816 AUDIT | user=doctor1 action=READ record=b3759693-5a44-4760-9c9b-4444c5f8978e ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-03-13 23:29:33,817 basehttp 12508 14816 "GET /records/b3759693-5a44-4760-9c9b-4444c5f8978e/ HTTP/1.1" 200 9180
+INFO 2026-03-13 23:29:55,677 basehttp 12508 14816 "GET / HTTP/1.1" 200 6773
+INFO 2026-03-13 23:31:06,953 autoreload 12088 2076 Watching for file changes with StatReloader
+WARNING 2026-03-13 23:31:25,887 exceptions 12088 11628 API error 405 – Method "GET" not allowed. (view=<apps.users.views.LoginView object at 0x0000021929656060>)
+WARNING 2026-03-13 23:31:25,903 log 12088 11628 Method Not Allowed: /api/v1/auth/login/
+WARNING 2026-03-13 23:31:25,903 basehttp 12088 11628 "GET /api/v1/auth/login/ HTTP/1.1" 405 95
+INFO 2026-03-13 23:31:28,869 services 12088 11628 User 'doctor1' (role=DOCTOR) logged in from 127.0.0.1
+INFO 2026-03-13 23:31:28,894 basehttp 12088 11628 "POST /api/v1/auth/login/ HTTP/1.1" 200 208
+INFO 2026-03-13 23:31:28,926 services 12088 11628 AUDIT | user=doctor1 action=CREATE record=1402858a-c6dc-4dcf-bd70-11e2961fab11 ip=127.0.0.1 | -
+INFO 2026-03-13 23:31:28,934 services 12088 11628 Record 1402858a-c6dc-4dcf-bd70-11e2961fab11 created for patient ed472a3f-dd57-42c4-805b-6c11836085ef by doctor1
+INFO 2026-03-13 23:31:28,947 basehttp 12088 11628 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:31:28,966 services 12088 11628 AUDIT | user=doctor1 action=CREATE record=1560bc05-6f89-46c7-8763-3cf0dc2fe8f1 ip=127.0.0.1 | -
+INFO 2026-03-13 23:31:28,979 services 12088 11628 Record 1560bc05-6f89-46c7-8763-3cf0dc2fe8f1 created for patient 18219db3-92f8-410f-9cf7-bf3f92efd529 by doctor1
+INFO 2026-03-13 23:31:28,994 basehttp 12088 11628 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:31:29,010 services 12088 11628 AUDIT | user=doctor1 action=CREATE record=737ce4f4-53c3-42ed-889c-354ffbd90a64 ip=127.0.0.1 | -
+INFO 2026-03-13 23:31:29,017 services 12088 11628 Record 737ce4f4-53c3-42ed-889c-354ffbd90a64 created for patient eb08d9e2-d476-4be8-bce9-99d6c49a572a by doctor1
+INFO 2026-03-13 23:31:29,037 basehttp 12088 11628 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:31:29,062 services 12088 11628 User 'doctor1' logged out.
+INFO 2026-03-13 23:31:29,067 basehttp 12088 11628 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
+INFO 2026-03-13 23:31:30,043 basehttp 12088 5296 "GET / HTTP/1.1" 200 6775
+INFO 2026-03-13 23:31:33,126 basehttp 12088 5296 "GET /records/ HTTP/1.1" 200 14116
+INFO 2026-03-13 23:31:34,792 basehttp 12088 5296 "GET / HTTP/1.1" 200 6775
+INFO 2026-03-13 23:32:29,591 autoreload 12132 1452 Watching for file changes with StatReloader
+INFO 2026-03-13 23:32:39,009 basehttp 12132 15332 "GET / HTTP/1.1" 200 6775
+INFO 2026-03-13 23:32:40,215 views 12132 15332 User 'doctor1' logged out via dashboard.
+INFO 2026-03-13 23:32:40,217 basehttp 12132 15332 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-03-13 23:32:40,231 basehttp 12132 15332 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-03-13 23:32:43,908 views 12132 15332 User 'doctor1' logged in via dashboard.
+INFO 2026-03-13 23:32:43,918 basehttp 12132 15332 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-03-13 23:32:43,953 basehttp 12132 15332 "GET / HTTP/1.1" 200 6775
+WARNING 2026-03-13 23:32:58,860 exceptions 12132 15348 API error 405 – Method "GET" not allowed. (view=<apps.users.views.LoginView object at 0x000001D75D642C90>)
+WARNING 2026-03-13 23:32:58,860 log 12132 15348 Method Not Allowed: /api/v1/auth/login/
+WARNING 2026-03-13 23:32:58,860 basehttp 12132 15348 "GET /api/v1/auth/login/ HTTP/1.1" 405 95
+INFO 2026-03-13 23:33:01,038 services 12132 15348 User 'doctor1' (role=DOCTOR) logged in from 127.0.0.1
+INFO 2026-03-13 23:33:01,055 basehttp 12132 15348 "POST /api/v1/auth/login/ HTTP/1.1" 200 208
+INFO 2026-03-13 23:33:01,099 services 12132 15348 AUDIT | user=doctor1 action=CREATE record=2c778620-e03a-4489-bc15-6d3dd76e7e19 ip=127.0.0.1 | -
+INFO 2026-03-13 23:33:01,112 services 12132 15348 Record 2c778620-e03a-4489-bc15-6d3dd76e7e19 created for patient da4dc678-8c13-4ff5-afff-339af7e34bf2 by doctor1
+INFO 2026-03-13 23:33:01,127 basehttp 12132 15348 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:33:01,152 services 12132 15348 AUDIT | user=doctor1 action=CREATE record=bd52740a-a792-4d3b-9c46-eb9a3a7abcde ip=127.0.0.1 | -
+INFO 2026-03-13 23:33:01,163 services 12132 15348 Record bd52740a-a792-4d3b-9c46-eb9a3a7abcde created for patient 7c8f9e83-b3bd-471f-93bf-adfe9d5f97bf by doctor1
+INFO 2026-03-13 23:33:01,178 basehttp 12132 15348 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:33:01,200 services 12132 15348 AUDIT | user=doctor1 action=CREATE record=909375b7-7b39-4443-9cba-2bd57009ca14 ip=127.0.0.1 | -
+INFO 2026-03-13 23:33:01,211 services 12132 15348 Record 909375b7-7b39-4443-9cba-2bd57009ca14 created for patient e4fb6d57-6ca7-42aa-95f0-b182e414e69f by doctor1
+INFO 2026-03-13 23:33:01,227 basehttp 12132 15348 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
+INFO 2026-03-13 23:33:01,249 services 12132 15348 User 'doctor1' logged out.
+INFO 2026-03-13 23:33:01,251 basehttp 12132 15348 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
