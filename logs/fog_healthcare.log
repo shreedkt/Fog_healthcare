@@ -1005,3 +1005,5 @@ INFO 2026-03-13 23:33:01,211 services 12132 15348 Record 909375b7-7b39-4443-9cba
 INFO 2026-03-13 23:33:01,227 basehttp 12132 15348 "POST /api/v1/records/create/ HTTP/1.1" 201 1124
 INFO 2026-03-13 23:33:01,249 services 12132 15348 User 'doctor1' logged out.
 INFO 2026-03-13 23:33:01,251 basehttp 12132 15348 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
+INFO 2026-05-12 17:52:03,341 autoreload 11376 5504 Watching for file changes with StatReloader
+INFO 2026-05-12 17:53:39,588 autoreload 13572 9848 Watching for file changes with StatReloader

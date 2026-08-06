@@ -50,6 +50,7 @@ LOCAL_APPS: list[str] = [
     "apps.audit",
     "apps.cloud_gateway",
     "apps.dashboard",
+     "apps.ai_prediction",
 ]
 
 INSTALLED_APPS: list[str] = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -95,7 +96,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": os.getenv("DB_NAME", "fog_healthcare"),
         "USER": os.getenv("DB_USER", "root"),
-        "PASSWORD": os.getenv("DB_PASSWORD", "Deepak123@#"),
+        "PASSWORD": os.getenv("DB_PASSWORD", ""),
         "HOST": os.getenv("DB_HOST", "127.0.0.1"),
         "PORT": os.getenv("DB_PORT", "3306"),
         "OPTIONS": {
@@ -124,15 +125,17 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # ──────────────────────────────────────────────────────────────
 LANGUAGE_CODE: str = "en-us"
-TIME_ZONE: str = "UTC"
+TIME_ZONE = "Asia/Kolkata"
 USE_I18N: bool = True
 USE_TZ: bool = True
 
 # ──────────────────────────────────────────────────────────────
 # Static Files
 # ──────────────────────────────────────────────────────────────
-STATIC_URL: str = "static/"
-STATIC_ROOT: Path = BASE_DIR / "staticfiles"
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
 # ──────────────────────────────────────────────────────────────
 # Default Primary Key
@@ -158,8 +161,9 @@ REST_FRAMEWORK = {
         "user": os.getenv("RATE_LIMIT_USER", "100/hour"),
     },
     "DEFAULT_RENDERER_CLASSES": [
-        "rest_framework.renderers.JSONRenderer",
-    ],
+    "rest_framework.renderers.JSONRenderer",
+    "rest_framework.renderers.BrowsableAPIRenderer",
+],
     "DEFAULT_PARSER_CLASSES": [
         "rest_framework.parsers.JSONParser",
     ],
@@ -205,6 +209,20 @@ FOG_ECC_PUBLIC_KEY_PATH: Path = BASE_DIR / os.getenv(
 CLOUD_ECC_PUBLIC_KEY_PATH: Path = BASE_DIR / os.getenv(
     "CLOUD_ECC_PUBLIC_KEY_PATH", "keys/cloud_public_key.pem"
 )
+# ──────────────────────────────────────────────────────────────
+# Machine Learning Configuration
+# ──────────────────────────────────────────────────────────────
+
+ML_MODEL_DIR: Path = BASE_DIR / "ml_model"
+ML_MODEL_DIR.mkdir(exist_ok=True)
+
+RISK_MODEL_PATH: Path = ML_MODEL_DIR / "risk_model.pkl"
+SCALER_PATH: Path = ML_MODEL_DIR / "scaler.pkl"
+
+AI_PREDICTION_ENABLED: bool = os.getenv(
+    "AI_PREDICTION_ENABLED",
+    "True"
+).lower() in ("true", "1", "yes")
 
 # ──────────────────────────────────────────────────────────────
 # Logging
@@ -236,16 +254,18 @@ LOGGING = {
             "class": "logging.StreamHandler",
             "formatter": "simple",
         },
+
         "file": {
             "level": "INFO",
             "class": "logging.handlers.RotatingFileHandler",
             "filename": str(
                 LOG_DIR / os.getenv("LOG_FILE", "fog_healthcare.log").split("/")[-1]
             ),
-            "maxBytes": 10 * 1024 * 1024,  # 10 MB
+            "maxBytes": 10 * 1024 * 1024,
             "backupCount": 5,
             "formatter": "verbose",
         },
+
         "security_file": {
             "level": "WARNING",
             "class": "logging.handlers.RotatingFileHandler",
@@ -254,22 +274,47 @@ LOGGING = {
             "backupCount": 5,
             "formatter": "verbose",
         },
+
+        # ⭐ AI Prediction Log
+        "ai_file": {
+            "level": "INFO",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": str(LOG_DIR / "ai_prediction.log"),
+            "maxBytes": 10 * 1024 * 1024,
+            "backupCount": 5,
+            "formatter": "verbose",
+        },
     },
+
     "loggers": {
         "django": {
             "handlers": ["console", "file"],
             "level": "INFO",
             "propagate": True,
         },
+
         "apps": {
             "handlers": ["console", "file"],
             "level": os.getenv("LOG_LEVEL", "DEBUG"),
             "propagate": False,
         },
+
         "security": {
             "handlers": ["console", "security_file"],
             "level": "WARNING",
             "propagate": False,
         },
+
+        # ⭐ AI Logger
+        "apps.ai_prediction": {
+            "handlers": ["console", "ai_file"],
+            "level": "INFO",
+            "propagate": False,
+        },
+        "ml_training": {
+    "handlers": ["console", "ai_file"],
+    "level": "INFO",
+    "propagate": False,
+},
     },
 }
