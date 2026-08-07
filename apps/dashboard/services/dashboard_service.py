@@ -65,10 +65,10 @@ class DashboardService:
 
         return {
             "summary": summary,
-            "patients": patients,
-            "risk_chart": risk_chart,
-            "trend_chart": trend_chart,
-            "ai": ai,
+    "patients": patients,
+    "risk_chart": json.dumps(risk_chart),
+    "trend_chart": json.dumps(trend_chart),
+    "ai": ai,
         }
 
     @staticmethod

@@ -1247,3 +1247,155 @@ INFO 2026-08-07 08:02:23,497 services 16812 11280 AUDIT | user=admin action=READ
 INFO 2026-08-07 08:02:23,558 basehttp 16812 11280 "GET /records/909375b7-7b39-4443-9cba-2bd57009ca14/ HTTP/1.1" 200 6142
 INFO 2026-08-07 08:02:30,042 basehttp 16812 11280 "GET / HTTP/1.1" 200 8788
 INFO 2026-08-07 08:02:30,644 basehttp 16812 11280 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 09:59:46,891 autoreload 12940 4844 Watching for file changes with StatReloader
+INFO 2026-08-07 09:59:57,541 autoreload 5212 4852 Watching for file changes with StatReloader
+INFO 2026-08-07 19:20:06,933 autoreload 2628 9804 Watching for file changes with StatReloader
+INFO 2026-08-07 19:26:34,670 autoreload 13452 7976 Watching for file changes with StatReloader
+INFO 2026-08-07 19:26:39,587 basehttp 13452 7988 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 19:26:39,900 basehttp 13452 7988 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 19:26:57,023 views 13452 7988 User 'admin' logged in via dashboard.
+INFO 2026-08-07 19:26:57,045 basehttp 13452 7988 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 19:26:57,247 basehttp 13452 7988 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 19:30:09,023 basehttp 13452 7988 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 19:30:12,872 basehttp 13452 7988 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 19:30:13,754 basehttp 13452 7988 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 19:30:30,390 basehttp 13452 15224 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 19:30:30,405 basehttp 13452 15224 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 19:30:30,827 basehttp 13452 15224 "GET /static/dashboard/css/styles.css HTTP/1.1" 200 1019
+WARNING 2026-08-07 19:30:31,271 log 13452 15224 Not Found: /favicon.ico
+WARNING 2026-08-07 19:30:31,286 basehttp 13452 15224 "GET /favicon.ico HTTP/1.1" 404 4331
+INFO 2026-08-07 19:30:35,248 views 13452 15224 User 'doctor1' logged in via dashboard.
+INFO 2026-08-07 19:30:35,258 basehttp 13452 15224 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 19:30:35,328 basehttp 13452 15224 "GET / HTTP/1.1" 200 8795
+INFO 2026-08-07 19:30:42,055 basehttp 13452 15224 "GET /records/ HTTP/1.1" 200 16363
+INFO 2026-08-07 19:30:44,999 basehttp 13452 15224 "GET / HTTP/1.1" 200 8795
+INFO 2026-08-07 19:30:53,971 basehttp 13452 15224 "GET / HTTP/1.1" 200 8795
+INFO 2026-08-07 19:30:55,192 basehttp 13452 15224 "GET / HTTP/1.1" 200 8795
+INFO 2026-08-07 19:30:56,138 basehttp 13452 15224 "GET / HTTP/1.1" 200 8795
+INFO 2026-08-07 19:31:03,305 views 13452 15224 User 'doctor1' logged out via dashboard.
+INFO 2026-08-07 19:31:03,305 basehttp 13452 15224 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 19:31:03,322 basehttp 13452 15224 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 19:31:20,303 views 13452 15224 User 'admin' logged in via dashboard.
+INFO 2026-08-07 19:31:20,303 basehttp 13452 15224 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 19:31:20,364 basehttp 13452 15224 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 19:31:26,672 basehttp 13452 15224 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 19:31:28,272 basehttp 13452 15224 "GET / HTTP/1.1" 200 8788
+WARNING 2026-08-07 19:31:36,091 log 13452 15224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-08-07 19:31:36,093 basehttp 13452 15224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4442
+INFO 2026-08-07 19:33:06,516 views 13452 15224 User 'admin' logged out via dashboard.
+INFO 2026-08-07 19:33:06,518 basehttp 13452 15224 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 19:33:06,526 basehttp 13452 15224 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 19:33:11,157 basehttp 13452 7988 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 19:36:17,026 basehttp 13452 7988 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 19:36:18,655 basehttp 13452 7988 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 20:39:22,385 basehttp 13452 17256 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 20:39:22,395 basehttp 13452 17256 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 20:39:38,111 basehttp 13452 15440 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 20:40:13,250 views 13452 17256 User 'doctor1' logged in via dashboard.
+INFO 2026-08-07 20:40:13,250 basehttp 13452 17256 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 20:40:13,306 basehttp 13452 17256 "GET / HTTP/1.1" 200 8795
+INFO 2026-08-07 20:40:29,185 basehttp 13452 17256 "GET /records/ HTTP/1.1" 200 16363
+INFO 2026-08-07 20:40:34,486 basehttp 13452 17256 "GET / HTTP/1.1" 200 8795
+INFO 2026-08-07 20:41:04,642 basehttp 13452 17256 "GET /records/ HTTP/1.1" 200 16363
+INFO 2026-08-07 21:35:58,132 basehttp 13452 13748 "GET / HTTP/1.1" 200 8797
+INFO 2026-08-07 21:36:13,849 basehttp 13452 13748 "GET /records/ HTTP/1.1" 200 16363
+INFO 2026-08-07 21:36:20,786 services 13452 13748 AUDIT | user=doctor1 action=READ record=737ce4f4-53c3-42ed-889c-354ffbd90a64 ip=127.0.0.1 | -
+INFO 2026-08-07 21:36:20,827 basehttp 13452 13748 "GET /records/737ce4f4-53c3-42ed-889c-354ffbd90a64/ HTTP/1.1" 200 6146
+INFO 2026-08-07 21:36:28,822 basehttp 13452 13748 "GET / HTTP/1.1" 200 8797
+INFO 2026-08-07 21:36:29,824 basehttp 13452 13748 "GET /records/ HTTP/1.1" 200 16363
+INFO 2026-08-07 21:36:32,983 basehttp 13452 13748 "GET /records/?patient_id=eb08d9e2-d476-4be8-bce9-99d6c49a572a HTTP/1.1" 200 6033
+INFO 2026-08-07 21:36:35,427 services 13452 13748 AUDIT | user=doctor1 action=READ record=737ce4f4-53c3-42ed-889c-354ffbd90a64 ip=127.0.0.1 | -
+INFO 2026-08-07 21:36:35,449 basehttp 13452 13748 "GET /records/737ce4f4-53c3-42ed-889c-354ffbd90a64/ HTTP/1.1" 200 6146
+INFO 2026-08-07 21:36:41,271 basehttp 13452 13748 "GET /records/ HTTP/1.1" 200 16363
+ERROR 2026-08-07 21:36:45,757 log 13452 13748 Internal Server Error: /records/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\decorators.py", line 43, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\views.py", line 120, in records_list_view
+    records = DashboardService.list_records(patient_id_filter=patient_id_filter)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py", line 99, in list_records
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1648, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1680, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1590, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1417, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\lookups.py", line 410, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\lookups.py", line 96, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“65151” is not a valid UUID.']
+ERROR 2026-08-07 21:36:45,775 basehttp 13452 13748 "GET /records/?patient_id=65151 HTTP/1.1" 500 172900
+INFO 2026-08-07 21:43:53,281 autoreload 11048 4776 Watching for file changes with StatReloader
+INFO 2026-08-07 21:44:03,000 basehttp 11048 10084 "GET /records/ HTTP/1.1" 200 16363
+INFO 2026-08-07 21:44:07,959 basehttp 11048 10084 "GET / HTTP/1.1" 200 8797
+INFO 2026-08-07 21:44:18,556 basehttp 11048 16360 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 21:44:18,575 basehttp 11048 16360 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 21:44:18,654 basehttp 11048 16360 "GET /static/dashboard/css/styles.css HTTP/1.1" 304 0
+INFO 2026-08-07 21:44:31,727 basehttp 11048 16360 "GET /login/ HTTP/1.1" 200 3712
+WARNING 2026-08-07 21:46:26,439 log 11048 16360 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-08-07 21:46:26,440 basehttp 11048 16360 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4442
+INFO 2026-08-07 21:47:03,398 basehttp 11048 10084 "GET /records/ HTTP/1.1" 200 16363
+INFO 2026-08-07 21:47:06,201 basehttp 11048 10084 "GET / HTTP/1.1" 200 8797
+INFO 2026-08-07 21:47:08,797 views 11048 10084 User 'doctor1' logged out via dashboard.
+INFO 2026-08-07 21:47:08,800 basehttp 11048 10084 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 21:47:08,807 basehttp 11048 10084 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 21:47:22,984 views 11048 10084 User 'admin' logged in via dashboard.
+INFO 2026-08-07 21:47:22,995 basehttp 11048 10084 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 21:47:23,050 basehttp 11048 10084 "GET / HTTP/1.1" 200 8790
+INFO 2026-08-07 21:56:05,115 basehttp 11048 11852 "GET /login/ HTTP/1.1" 200 3779
+INFO 2026-08-07 21:56:12,431 basehttp 11048 3668 "GET / HTTP/1.1" 200 8857
+INFO 2026-08-07 21:56:14,790 basehttp 11048 3668 "GET / HTTP/1.1" 200 8857
+INFO 2026-08-07 21:57:23,172 basehttp 11048 3668 "GET / HTTP/1.1" 200 8857
+INFO 2026-08-07 22:11:56,522 autoreload 16816 16752 Watching for file changes with StatReloader
+INFO 2026-08-07 22:12:00,691 basehttp 16816 5236 "GET / HTTP/1.1" 200 8400
+INFO 2026-08-07 22:12:01,335 basehttp 16816 5236 "GET /static/dashboard/js/dashboard.js HTTP/1.1" 200 3483
+INFO 2026-08-07 22:19:18,406 autoreload 16816 16752 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 22:19:21,154 autoreload 1352 9244 Watching for file changes with StatReloader
+INFO 2026-08-07 22:20:03,450 basehttp 1352 16628 "GET / HTTP/1.1" 200 8400
