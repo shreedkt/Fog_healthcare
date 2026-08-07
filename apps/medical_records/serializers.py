@@ -10,32 +10,70 @@ from .models import MedicalRecord
 
 
 class MedicalRecordCreateSerializer(serializers.Serializer):
-    """Validates incoming encrypted payloads from IoT / client devices.
-
-    The client has already encrypted the data; the API stores it as-is
-    after verifying the integrity hash.
+    """
+    Validate encrypted medical records and patient health parameters.
     """
 
+    # ==========================================================
+    # Existing Encryption Fields
+    # ==========================================================
+
     patient_id = serializers.UUIDField(
-        help_text="UUID of the patient.",
+        help_text="UUID of the patient."
     )
+
     encrypted_payload = serializers.CharField(
-        help_text="Base64-encoded AES ciphertext.",
+        help_text="Base64 encoded encrypted payload."
     )
+
     encrypted_aes_key = serializers.CharField(
-        help_text="Base64-encoded wrapped AES key.",
+        help_text="Encrypted AES Key."
     )
+
     ephemeral_public_key = serializers.CharField(
-        help_text="Base64-encoded ephemeral ECC public key.",
+        help_text="Ephemeral ECC Public Key."
     )
+
     integrity_hash = serializers.CharField(
         max_length=64,
-        help_text="SHA-256 hex digest of the ciphertext.",
+        help_text="SHA-256 Integrity Hash."
     )
+
+    # ==========================================================
+    # Patient Health Parameters (NEW)
+    # ==========================================================
+
+    age = serializers.FloatField()
+
+    gender = serializers.CharField()
+
+    heart_rate = serializers.FloatField()
+
+    systolic_bp = serializers.FloatField()
+
+    diastolic_bp = serializers.FloatField()
+
+    temperature = serializers.FloatField()
+
+    spo2 = serializers.FloatField()
+
+    respiratory_rate = serializers.FloatField()
+
+    blood_sugar = serializers.FloatField()
+
+    bmi = serializers.FloatField()
+
+    smoking = serializers.IntegerField()
+
+    exercise_level = serializers.IntegerField()
+
+    cholesterol = serializers.FloatField()
 
 
 class MedicalRecordResponseSerializer(serializers.ModelSerializer):
-    """Read-only representation of a stored medical record."""
+    """
+    Read only Medical Record Response
+    """
 
     created_by_username = serializers.CharField(
         source="created_by.username",
@@ -43,17 +81,47 @@ class MedicalRecordResponseSerializer(serializers.ModelSerializer):
     )
 
     class Meta:
+
         model = MedicalRecord
+
         fields = [
+
             "id",
+
             "patient_id",
+
             "encrypted_payload",
+
             "encrypted_aes_key",
+
             "ephemeral_public_key",
+
             "integrity_hash",
+
             "created_by",
+
             "created_by_username",
+
             "created_at",
+
             "updated_at",
+
+            # -------------------------
+            # AI Prediction
+            # -------------------------
+
+            "risk_level",
+
+            "risk_score",
+
+            "recommendation",
+
+            "prediction_time",
+
+            "ai_model_name",
+
+            "ai_model_accuracy",
+
         ]
+
         read_only_fields = fields

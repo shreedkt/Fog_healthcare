@@ -1007,3 +1007,243 @@ INFO 2026-03-13 23:33:01,249 services 12132 15348 User 'doctor1' logged out.
 INFO 2026-03-13 23:33:01,251 basehttp 12132 15348 "POST /api/v1/auth/logout/ HTTP/1.1" 200 47
 INFO 2026-05-12 17:52:03,341 autoreload 11376 5504 Watching for file changes with StatReloader
 INFO 2026-05-12 17:53:39,588 autoreload 13572 9848 Watching for file changes with StatReloader
+INFO 2026-08-06 21:35:55,471 autoreload 7904 12020 Watching for file changes with StatReloader
+INFO 2026-08-06 21:36:01,476 basehttp 7904 15244 "GET / HTTP/1.1" 302 0
+INFO 2026-08-06 21:36:01,860 basehttp 7904 15244 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-06 21:36:02,365 basehttp 7904 15244 "GET /static/dashboard/css/styles.css HTTP/1.1" 200 16589
+WARNING 2026-08-06 21:36:03,355 log 7904 15244 Not Found: /favicon.ico
+WARNING 2026-08-06 21:36:03,356 basehttp 7904 15244 "GET /favicon.ico HTTP/1.1" 404 4178
+WARNING 2026-08-06 21:36:24,396 views 7904 15244 Failed login attempt for username 'deepak'.
+WARNING 2026-08-06 21:36:24,399 log 7904 15244 Bad Request: /login/
+WARNING 2026-08-06 21:36:24,402 basehttp 7904 15244 "POST /login/ HTTP/1.1" 400 4060
+INFO 2026-08-07 05:07:55,209 autoreload 15016 18084 Watching for file changes with StatReloader
+INFO 2026-08-07 05:08:04,098 basehttp 15016 2408 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 05:08:04,265 basehttp 15016 2408 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 05:13:09,345 autoreload 15016 18084 C:\Users\user\Desktop\Fog_healthcare\config\urls.py changed, reloading.
+INFO 2026-08-07 05:13:11,290 autoreload 4576 4272 Watching for file changes with StatReloader
+INFO 2026-08-07 05:14:04,361 autoreload 4576 4272 C:\Users\user\Desktop\Fog_healthcare\apps\ai_prediction\views.py changed, reloading.
+INFO 2026-08-07 05:14:06,420 autoreload 16724 20340 Watching for file changes with StatReloader
+INFO 2026-08-07 05:14:44,858 autoreload 19100 7600 Watching for file changes with StatReloader
+INFO 2026-08-07 05:14:50,093 basehttp 19100 1564 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 05:14:50,136 basehttp 19100 1564 "GET /login/?next=/ HTTP/1.1" 200 3712
+WARNING 2026-08-07 05:15:58,452 views 19100 1564 Failed login attempt for username 'admin'.
+WARNING 2026-08-07 05:15:58,460 log 19100 1564 Bad Request: /login/
+WARNING 2026-08-07 05:15:58,461 basehttp 19100 1564 "POST /login/ HTTP/1.1" 400 4059
+INFO 2026-08-07 05:20:13,861 autoreload 17016 5088 Watching for file changes with StatReloader
+INFO 2026-08-07 05:20:19,793 basehttp 17016 13400 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 05:20:19,933 basehttp 17016 13400 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 05:20:33,624 views 17016 13400 User 'admin' logged in via dashboard.
+INFO 2026-08-07 05:20:33,643 basehttp 17016 13400 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 05:20:33,724 basehttp 17016 13400 "GET / HTTP/1.1" 200 6875
+INFO 2026-08-07 05:20:50,045 basehttp 17016 13400 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 05:20:53,529 services 17016 13400 AUDIT | user=admin action=READ record=909375b7-7b39-4443-9cba-2bd57009ca14 ip=127.0.0.1 | Dashboard record view (decrypted)
+INFO 2026-08-07 05:20:53,563 basehttp 17016 13400 "GET /records/909375b7-7b39-4443-9cba-2bd57009ca14/ HTTP/1.1" 200 9176
+INFO 2026-08-07 05:21:14,661 basehttp 17016 13400 "GET / HTTP/1.1" 200 6875
+INFO 2026-08-07 05:22:06,276 views 17016 13400 User 'admin' logged out via dashboard.
+INFO 2026-08-07 05:22:06,278 basehttp 17016 13400 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 05:22:06,285 basehttp 17016 13400 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 06:12:53,729 autoreload 10216 11772 Watching for file changes with StatReloader
+INFO 2026-08-07 06:13:01,535 basehttp 10216 12660 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 06:13:01,661 basehttp 10216 12660 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 06:13:22,015 views 10216 12660 User 'admin' logged in via dashboard.
+INFO 2026-08-07 06:13:22,050 basehttp 10216 12660 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:13:22,095 basehttp 10216 12660 "GET / HTTP/1.1" 200 6871
+INFO 2026-08-07 06:13:31,197 basehttp 10216 12660 "GET /admin/ HTTP/1.1" 200 8771
+INFO 2026-08-07 06:13:31,699 basehttp 10216 12660 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2026-08-07 06:13:31,716 basehttp 10216 11000 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-08-07 06:13:31,716 basehttp 10216 14124 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-08-07 06:13:31,756 basehttp 10216 5456 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2026-08-07 06:13:31,774 basehttp 10216 20236 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2026-08-07 06:13:31,899 basehttp 10216 20236 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-08-07 06:13:32,000 basehttp 10216 13832 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-08-07 06:13:32,357 basehttp 10216 5456 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2026-08-07 06:13:32,359 basehttp 10216 20236 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2026-08-07 06:13:32,370 basehttp 10216 13832 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2026-08-07 06:13:57,983 basehttp 10216 13832 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 06:14:02,470 basehttp 10216 13832 "GET /records/?patient_id= HTTP/1.1" 200 16359
+INFO 2026-08-07 06:14:04,813 services 10216 13832 AUDIT | user=admin action=READ record=1402858a-c6dc-4dcf-bd70-11e2961fab11 ip=127.0.0.1 | -
+INFO 2026-08-07 06:14:04,837 basehttp 10216 13832 "GET /records/1402858a-c6dc-4dcf-bd70-11e2961fab11/ HTTP/1.1" 200 6142
+INFO 2026-08-07 06:14:20,783 views 10216 13832 User 'admin' logged out via dashboard.
+INFO 2026-08-07 06:14:20,783 basehttp 10216 13832 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:14:20,797 basehttp 10216 13832 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 06:27:54,608 autoreload 14548 17304 Watching for file changes with StatReloader
+INFO 2026-08-07 06:28:03,213 basehttp 14548 16104 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 06:28:03,266 basehttp 14548 16104 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 06:28:18,284 views 14548 16104 User 'admin' logged in via dashboard.
+INFO 2026-08-07 06:28:18,295 basehttp 14548 16104 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:28:18,336 basehttp 14548 16104 "GET / HTTP/1.1" 200 6871
+INFO 2026-08-07 06:28:45,123 basehttp 14548 16104 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 06:28:55,564 basehttp 14548 16104 "GET / HTTP/1.1" 200 6871
+INFO 2026-08-07 06:29:11,946 basehttp 14548 18132 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 06:29:11,962 basehttp 14548 18132 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 06:29:12,384 basehttp 14548 18132 "GET /static/dashboard/css/styles.css HTTP/1.1" 200 961
+WARNING 2026-08-07 06:29:12,915 log 14548 18132 Not Found: /favicon.ico
+WARNING 2026-08-07 06:29:12,916 basehttp 14548 18132 "GET /favicon.ico HTTP/1.1" 404 4331
+INFO 2026-08-07 06:29:15,093 basehttp 14548 18132 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 06:29:19,999 views 14548 18132 User 'doctor1' logged in via dashboard.
+INFO 2026-08-07 06:29:20,022 basehttp 14548 18132 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:29:20,068 basehttp 14548 18132 "GET / HTTP/1.1" 200 6771
+INFO 2026-08-07 06:29:32,659 views 14548 16104 User 'admin' logged out via dashboard.
+INFO 2026-08-07 06:29:32,661 basehttp 14548 16104 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:29:32,669 basehttp 14548 16104 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 06:29:44,353 basehttp 14548 16104 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 06:29:44,496 basehttp 14548 16104 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 06:29:55,640 basehttp 14548 18132 "GET /login/?next=/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:29:55,713 basehttp 14548 18132 "GET / HTTP/1.1" 200 6771
+INFO 2026-08-07 06:29:55,898 basehttp 14548 18132 "GET /static/dashboard/css/styles.css HTTP/1.1" 304 0
+INFO 2026-08-07 06:29:58,935 basehttp 14548 18132 "GET / HTTP/1.1" 200 6771
+INFO 2026-08-07 06:30:00,285 basehttp 14548 18132 "GET / HTTP/1.1" 200 6771
+INFO 2026-08-07 06:30:04,716 basehttp 14548 18132 "GET / HTTP/1.1" 200 6771
+INFO 2026-08-07 06:30:09,052 basehttp 14548 16104 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 06:30:22,750 views 14548 16104 User 'admin' logged in via dashboard.
+INFO 2026-08-07 06:30:22,751 basehttp 14548 16104 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:30:22,801 basehttp 14548 16104 "GET / HTTP/1.1" 200 6871
+INFO 2026-08-07 06:31:00,921 basehttp 14548 16104 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 06:31:14,547 services 14548 16104 AUDIT | user=admin action=READ record=1402858a-c6dc-4dcf-bd70-11e2961fab11 ip=127.0.0.1 | -
+INFO 2026-08-07 06:31:14,568 basehttp 14548 16104 "GET /records/1402858a-c6dc-4dcf-bd70-11e2961fab11/ HTTP/1.1" 200 6142
+INFO 2026-08-07 06:32:30,403 basehttp 14548 16104 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 06:32:31,651 views 14548 16104 User 'admin' logged out via dashboard.
+INFO 2026-08-07 06:32:31,651 basehttp 14548 16104 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 06:32:31,651 basehttp 14548 16104 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 06:33:35,328 autoreload 14548 17304 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\views.py changed, reloading.
+INFO 2026-08-07 06:33:37,753 autoreload 7440 15452 Watching for file changes with StatReloader
+INFO 2026-08-07 06:55:24,384 autoreload 7440 15452 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 06:55:30,372 autoreload 19084 5092 Watching for file changes with StatReloader
+INFO 2026-08-07 06:55:52,463 autoreload 19084 5092 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 06:55:56,478 autoreload 18980 11820 Watching for file changes with StatReloader
+INFO 2026-08-07 06:56:50,641 autoreload 18980 11820 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 06:56:53,202 autoreload 10976 13828 Watching for file changes with StatReloader
+INFO 2026-08-07 07:10:53,690 autoreload 18204 7804 Watching for file changes with StatReloader
+INFO 2026-08-07 07:11:07,268 basehttp 18204 12924 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 07:11:07,611 basehttp 18204 12924 "GET /login/?next=/ HTTP/1.1" 200 3712
+INFO 2026-08-07 07:11:28,482 views 18204 12924 User 'admin' logged in via dashboard.
+INFO 2026-08-07 07:11:28,501 basehttp 18204 12924 "POST /login/ HTTP/1.1" 302 0
+ERROR 2026-08-07 07:11:28,917 log 18204 12924 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\views.py", line 91, in home_view
+    dashboard = DashboardService.get_dashboard()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py", line 69, in get_dashboard
+    "stats": stats,
+             ^^^^^
+NameError: name 'stats' is not defined
+ERROR 2026-08-07 07:11:28,925 basehttp 18204 12924 "GET / HTTP/1.1" 500 93243
+INFO 2026-08-07 07:16:32,174 autoreload 18204 7804 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 07:16:37,031 autoreload 4480 18896 Watching for file changes with StatReloader
+INFO 2026-08-07 07:18:55,621 autoreload 20348 10696 Watching for file changes with StatReloader
+INFO 2026-08-07 07:19:01,356 basehttp 20348 12224 "GET / HTTP/1.1" 200 8436
+INFO 2026-08-07 07:19:12,383 views 20348 12224 User 'admin' logged out via dashboard.
+INFO 2026-08-07 07:19:12,386 basehttp 20348 12224 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 07:19:12,394 basehttp 20348 12224 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 07:19:26,424 views 20348 12224 User 'admin' logged in via dashboard.
+INFO 2026-08-07 07:19:26,428 basehttp 20348 12224 "POST /login/ HTTP/1.1" 302 0
+INFO 2026-08-07 07:19:26,491 basehttp 20348 12224 "GET / HTTP/1.1" 200 8436
+INFO 2026-08-07 07:19:51,146 basehttp 20348 12224 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 07:20:00,444 services 20348 12224 AUDIT | user=admin action=READ record=909375b7-7b39-4443-9cba-2bd57009ca14 ip=127.0.0.1 | -
+INFO 2026-08-07 07:20:00,481 basehttp 20348 12224 "GET /records/909375b7-7b39-4443-9cba-2bd57009ca14/ HTTP/1.1" 200 6142
+INFO 2026-08-07 07:20:04,358 basehttp 20348 12224 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 07:20:07,093 basehttp 20348 12224 "GET / HTTP/1.1" 200 8436
+INFO 2026-08-07 07:21:22,561 basehttp 20348 12224 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 07:21:40,575 basehttp 20348 12224 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 07:21:41,843 basehttp 20348 12224 "GET / HTTP/1.1" 200 8436
+INFO 2026-08-07 07:21:52,709 basehttp 20348 12224 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 07:21:57,637 views 20348 12224 User 'admin' logged out via dashboard.
+INFO 2026-08-07 07:21:57,639 basehttp 20348 12224 "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-08-07 07:21:57,647 basehttp 20348 12224 "GET /login/ HTTP/1.1" 200 4052
+INFO 2026-08-07 07:40:45,973 autoreload 8844 15776 Watching for file changes with StatReloader
+INFO 2026-08-07 07:40:53,613 basehttp 8844 13612 "GET / HTTP/1.1" 302 0
+INFO 2026-08-07 07:40:53,659 basehttp 8844 13612 "GET /login/?next=/ HTTP/1.1" 200 3712
+WARNING 2026-08-07 07:41:05,844 views 8844 13612 Failed login attempt for username 'admin'.
+WARNING 2026-08-07 07:41:05,848 log 8844 13612 Bad Request: /login/
+WARNING 2026-08-07 07:41:05,850 basehttp 8844 13612 "POST /login/ HTTP/1.1" 400 4059
+INFO 2026-08-07 07:41:15,524 views 8844 13612 User 'admin' logged in via dashboard.
+INFO 2026-08-07 07:41:15,540 basehttp 8844 13612 "POST /login/ HTTP/1.1" 302 0
+ERROR 2026-08-07 07:41:15,643 log 8844 13612 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\views.py", line 91, in home_view
+    dashboard = DashboardService.get_dashboard()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py", line 43, in get_dashboard
+    distribution = AnalyticsService.risk_distribution()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'AnalyticsService' has no attribute 'risk_distribution'
+ERROR 2026-08-07 07:41:15,649 basehttp 8844 13612 "GET / HTTP/1.1" 500 91452
+INFO 2026-08-07 07:41:51,089 autoreload 2872 16352 Watching for file changes with StatReloader
+ERROR 2026-08-07 07:41:55,470 log 2872 16892 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\views.py", line 91, in home_view
+    dashboard = DashboardService.get_dashboard()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py", line 43, in get_dashboard
+    distribution = AnalyticsService.risk_distribution()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'AnalyticsService' has no attribute 'risk_distribution'
+ERROR 2026-08-07 07:41:55,552 basehttp 2872 16892 "GET / HTTP/1.1" 500 91158
+INFO 2026-08-07 07:44:02,740 autoreload 2872 16352 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 07:44:04,903 autoreload 19944 3436 Watching for file changes with StatReloader
+INFO 2026-08-07 07:44:24,295 autoreload 19944 3436 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 07:44:26,297 autoreload 9528 12064 Watching for file changes with StatReloader
+INFO 2026-08-07 07:44:35,330 autoreload 9528 12064 C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py changed, reloading.
+INFO 2026-08-07 07:44:37,450 autoreload 16056 12576 Watching for file changes with StatReloader
+INFO 2026-08-07 07:45:35,198 autoreload 18892 14944 Watching for file changes with StatReloader
+INFO 2026-08-07 07:45:39,346 basehttp 18892 12368 "GET / HTTP/1.1" 200 8806
+INFO 2026-08-07 07:47:25,007 autoreload 20324 13136 Watching for file changes with StatReloader
+ERROR 2026-08-07 07:47:36,615 log 20324 7720 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\views.py", line 91, in home_view
+    dashboard = DashboardService.get_dashboard()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\dashboard_service.py", line 47, in get_dashboard
+    trend_chart = ChartService.prediction_trend()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Fog_healthcare\apps\dashboard\services\chart_service.py", line 49, in prediction_trend
+    item["day"].strftime("%d %b")
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strftime'
+ERROR 2026-08-07 07:47:36,624 basehttp 20324 7720 "GET / HTTP/1.1" 500 95568
+INFO 2026-08-07 07:54:00,930 autoreload 19756 14732 Watching for file changes with StatReloader
+INFO 2026-08-07 07:55:34,337 autoreload 19756 14732 C:\Users\user\Desktop\Fog_healthcare\apps\ai_prediction\predictor.py changed, reloading.
+INFO 2026-08-07 07:55:39,816 autoreload 5092 17188 Watching for file changes with StatReloader
+INFO 2026-08-07 08:01:18,208 autoreload 16812 19748 Watching for file changes with StatReloader
+INFO 2026-08-07 08:01:27,711 basehttp 16812 11280 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 08:02:21,746 basehttp 16812 11280 "GET /records/ HTTP/1.1" 200 16359
+INFO 2026-08-07 08:02:23,497 services 16812 11280 AUDIT | user=admin action=READ record=909375b7-7b39-4443-9cba-2bd57009ca14 ip=127.0.0.1 | -
+INFO 2026-08-07 08:02:23,558 basehttp 16812 11280 "GET /records/909375b7-7b39-4443-9cba-2bd57009ca14/ HTTP/1.1" 200 6142
+INFO 2026-08-07 08:02:30,042 basehttp 16812 11280 "GET / HTTP/1.1" 200 8788
+INFO 2026-08-07 08:02:30,644 basehttp 16812 11280 "GET / HTTP/1.1" 200 8788

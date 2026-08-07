@@ -10,6 +10,7 @@ import logging
 from uuid import UUID
 
 from rest_framework import status
+from rest_framework import request
 from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -53,8 +54,27 @@ class RecordCreateView(APIView):
         serializer.is_valid(raise_exception=True)
 
         try:
+            validated_data = serializer.validated_data
+
+            patient_data = {
+                "age": validated_data.pop("age"),
+                "gender": validated_data.pop("gender"),
+                "heart_rate": validated_data.pop("heart_rate"),
+                "systolic_bp": validated_data.pop("systolic_bp"),
+                "diastolic_bp": validated_data.pop("diastolic_bp"),
+                "temperature": validated_data.pop("temperature"),
+                "spo2": validated_data.pop("spo2"),
+                "respiratory_rate": validated_data.pop("respiratory_rate"),
+                "blood_sugar": validated_data.pop("blood_sugar"),
+                "bmi": validated_data.pop("bmi"),
+                "smoking": validated_data.pop("smoking"),
+                "exercise_level": validated_data.pop("exercise_level"),
+                "cholesterol": validated_data.pop("cholesterol"),
+            }
+
             record = MedicalRecordService.create_record(
-                **serializer.validated_data,
+                **validated_data,
+                patient_data=patient_data,
                 created_by=request.user,
                 ip_address=_client_ip(request),
             )

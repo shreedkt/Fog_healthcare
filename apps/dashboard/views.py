@@ -84,14 +84,25 @@ def logout_view(request: HttpRequest) -> HttpResponse:
 # Home
 # ---------------------------------------------------------------------------
 
+
 @login_required
-def home_view(request: HttpRequest) -> HttpResponse:
-    """Dashboard landing page with aggregate statistics."""
-    stats = DashboardService.get_stats()
-    context = {
-        "stats": stats,
-    }
-    return render(request, "dashboard/home.html", context)
+def home_view(request):
+
+    dashboard = DashboardService.get_dashboard()
+
+    return render(
+
+        request,
+
+        "dashboard/home.html",
+
+        {
+
+            "dashboard": dashboard,
+
+        },
+
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -140,9 +151,10 @@ def record_detail_view(request: HttpRequest, record_id: str) -> HttpResponse:
             request=request,
         )
         context = {
-            "record": decrypted,
-            "integrity_ok": True,
-        }
+    "record": decrypted,
+    "integrity_ok": True,
+    "page": "record_detail",
+}
 
     except RecordNotFoundError:
         messages.error(request, ErrorMessages.RECORD_NOT_FOUND)

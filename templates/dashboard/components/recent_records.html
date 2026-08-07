@@ -1,0 +1,82 @@
+<div class="card mb-4">
+
+    <div class="card-body">
+
+        <h5 class="mb-4">
+
+            Recent Medical Records
+
+        </h5>
+
+        <table class="table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Patient</th>
+
+                    <th>Risk</th>
+
+                    <th>Model</th>
+
+                    <th>Time</th>
+
+                    <th></th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            {% for record in dashboard.patients %}
+
+                <tr>
+
+                    <td>
+
+                        {{ record.patient_id }}
+
+                    </td>
+
+                    <td>
+
+                        {{ record.risk_level }}
+
+                    </td>
+
+                    <td>
+
+                        {{ record.ai_model_name }}
+
+                    </td>
+
+                    <td>
+
+                        {{ record.prediction_time }}
+
+                    </td>
+
+                    <td>
+
+                        <a href="{% url 'dashboard:record_detail' record.id %}"
+                           class="btn btn-sm btn-primary">
+
+                            View
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

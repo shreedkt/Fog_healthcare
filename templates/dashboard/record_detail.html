@@ -1,0 +1,300 @@
+{% extends "dashboard/base.html" %}
+
+{% block title %}
+Medical Record
+{% endblock %}
+
+{% block content %}
+
+<h3 class="mb-4">
+
+    Medical Record Details
+
+</h3>
+
+
+{% if integrity_ok %}
+
+<div class="row">
+
+    <!-- LEFT COLUMN -->
+
+    <div class="col-lg-8">
+
+        <!-- Patient Information -->
+
+        <div class="card mb-4">
+
+            <div class="card-header">
+
+                <strong>Patient Information</strong>
+
+            </div>
+
+            <div class="card-body">
+
+                <table class="table table-borderless">
+
+                    <tr>
+
+                        <th width="220">
+
+                            Patient ID
+
+                        </th>
+
+                        <td>
+
+                            {{ record.patient_id }}
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>
+
+                            Created By
+
+                        </th>
+
+                        <td>
+
+                            {{ record.created_by.username }}
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>
+
+                            Created At
+
+                        </th>
+
+                        <td>
+
+                            {{ record.created_at }}
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>
+
+                            Last Updated
+
+                        </th>
+
+                        <td>
+
+                            {{ record.updated_at }}
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- AI Prediction -->
+
+        <div class="card mb-4">
+
+            <div class="card-header">
+
+                <strong>AI Risk Assessment</strong>
+
+            </div>
+
+            <div class="card-body">
+
+                <table class="table table-borderless">
+
+                    <tr>
+
+                        <th width="220">
+
+                            Risk Level
+
+                        </th>
+
+                        <td>
+
+                            {{ record.risk_level }}
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>
+
+                            Confidence
+
+                        </th>
+
+                        <td>
+
+                            {{ record.risk_score }} %
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>
+
+                            AI Model
+
+                        </th>
+
+                        <td>
+
+                            {{ record.ai_model_name }}
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>
+
+                            Model Accuracy
+
+                        </th>
+
+                        <td>
+
+                            {{ record.ai_model_accuracy }} %
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>
+
+                            Prediction Time
+
+                        </th>
+
+                        <td>
+
+                            {{ record.prediction_time }}
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recommendation -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <strong>Medical Recommendation</strong>
+
+            </div>
+
+            <div class="card-body">
+
+                {{ record.recommendation }}
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+
+    <div class="col-lg-4">
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <strong>Security Information</strong>
+
+            </div>
+
+            <div class="card-body">
+
+                <small class="text-muted">
+
+                    AES Encrypted Payload
+
+                </small>
+
+                <textarea
+                    class="form-control mb-3"
+                    rows="5"
+                    readonly>{{ record.encrypted_payload }}</textarea>
+
+
+                <small class="text-muted">
+
+                    ECC Encrypted AES Key
+
+                </small>
+
+                <textarea
+                    class="form-control mb-3"
+                    rows="5"
+                    readonly>{{ record.encrypted_aes_key }}</textarea>
+
+
+                <small class="text-muted">
+
+                    Integrity Hash
+
+                </small>
+
+                <textarea
+                    class="form-control"
+                    rows="4"
+                    readonly>{{ record.integrity_hash }}</textarea>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% else %}
+
+<div class="alert alert-danger">
+
+    Integrity verification failed.
+
+    This encrypted medical record appears to have been modified.
+
+</div>
+
+{% endif %}
+
+{% endblock %}

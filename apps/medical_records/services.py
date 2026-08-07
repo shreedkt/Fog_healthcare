@@ -16,8 +16,13 @@ from django.db import transaction
 
 from apps.audit.services import AuditService
 from apps.encryption.services import HybridEncryptionService
+from apps.ai_prediction.services import AIPredictionService
+
 from common.constants import AuditAction
-from common.exceptions import IntegrityVerificationError, RecordNotFoundError
+from common.exceptions import (
+    IntegrityVerificationError,
+    RecordNotFoundError,
+)
 
 from .models import MedicalRecord
 
@@ -25,7 +30,7 @@ logger = logging.getLogger("apps.medical_records")
 
 
 class MedicalRecordService:
-    """Encapsulates all medical-record business logic."""
+    """Medical Record Business Logic."""
 
     @staticmethod
     def create_record(
@@ -36,37 +41,59 @@ class MedicalRecordService:
         ephemeral_public_key: str,
         integrity_hash: str,
         created_by: Any,
+        patient_data: dict,
         ip_address: str = "unknown",
     ) -> MedicalRecord:
-        """Persist a new encrypted medical record after integrity check.
 
-        Args:
-            patient_id: The patient's UUID.
-            encrypted_payload: Base64-encoded AES ciphertext.
-            encrypted_aes_key: Base64-encoded wrapped AES key.
-            ephemeral_public_key: Base64-encoded ephemeral ECC public key.
-            integrity_hash: Expected SHA-256 hex digest.
-            created_by: The authenticated User instance.
-            ip_address: Client IP for audit logging.
+        # ------------------------------------
+        # Verify Encryption Integrity
+        # ------------------------------------
 
-        Returns:
-            The newly created ``MedicalRecord``.
-
-        Raises:
-            IntegrityVerificationError: If the hash does not match.
-        """
-        # Verify integrity before persisting
         ciphertext_bytes = base64.b64decode(encrypted_payload)
-        HybridEncryptionService.verify_integrity(ciphertext_bytes, integrity_hash)
+        HybridEncryptionService.verify_integrity(
+            ciphertext_bytes,
+            integrity_hash,
+        )
+
+        # ------------------------------------
+        # AI Prediction
+        # ------------------------------------
+
+        ai_service = AIPredictionService()
+
+        prediction = ai_service.predict(patient_data)
+
+        # ------------------------------------
+        # Save Record
+        # ------------------------------------
 
         with transaction.atomic():
+
             record = MedicalRecord.objects.create(
+
                 patient_id=patient_id,
+
                 encrypted_payload=encrypted_payload,
+
                 encrypted_aes_key=encrypted_aes_key,
+
                 ephemeral_public_key=ephemeral_public_key,
+
                 integrity_hash=integrity_hash,
+
                 created_by=created_by,
+
+                risk_level=prediction["risk_level"],
+
+                risk_score=prediction["risk_score"],
+
+                recommendation=prediction["recommendation"],
+
+                prediction_time=prediction["prediction_time"],
+
+                ai_model_name=prediction["ai_model_name"],
+
+                ai_model_accuracy=prediction["ai_model_accuracy"],
             )
 
             AuditService.log(
@@ -82,6 +109,7 @@ class MedicalRecordService:
             patient_id,
             created_by.username,
         )
+
         return record
 
     @staticmethod
@@ -90,25 +118,16 @@ class MedicalRecordService:
         user: Any,
         ip_address: str = "unknown",
     ) -> MedicalRecord:
-        """Retrieve a single record by ID and log the access.
 
-        Args:
-            record_id: The UUID of the record.
-            user: The authenticated User instance.
-            ip_address: Client IP for audit logging.
-
-        Returns:
-            The ``MedicalRecord`` instance.
-
-        Raises:
-            RecordNotFoundError: If the record does not exist or is soft-deleted.
-        """
         try:
-            record = MedicalRecord.objects.select_related("created_by").get(
-                pk=record_id
-            )
+            record = MedicalRecord.objects.select_related(
+                "created_by"
+            ).get(pk=record_id)
+
         except MedicalRecord.DoesNotExist:
-            raise RecordNotFoundError(f"Record {record_id} not found.")
+            raise RecordNotFoundError(
+                f"Record {record_id} not found."
+            )
 
         AuditService.log(
             user=user,
@@ -116,6 +135,7 @@ class MedicalRecordService:
             record=record,
             ip_address=ip_address,
         )
+
         return record
 
     @staticmethod
@@ -124,16 +144,7 @@ class MedicalRecordService:
         user: Any,
         ip_address: str = "unknown",
     ) -> list[MedicalRecord]:
-        """Retrieve all active records for a given patient.
 
-        Args:
-            patient_id: The patient's UUID.
-            user: The authenticated User instance.
-            ip_address: Client IP for audit logging.
-
-        Returns:
-            Queryset of ``MedicalRecord`` instances.
-        """
         records = list(
             MedicalRecord.objects.select_related("created_by")
             .filter(patient_id=patient_id)
@@ -141,6 +152,7 @@ class MedicalRecordService:
         )
 
         if records:
+
             AuditService.log(
                 user=user,
                 action=AuditAction.READ,
@@ -148,6 +160,7 @@ class MedicalRecordService:
                 ip_address=ip_address,
                 details=f"Bulk read for patient {patient_id} ({len(records)} records)",
             )
+
         return records
 
     @staticmethod
@@ -156,20 +169,14 @@ class MedicalRecordService:
         user: Any,
         ip_address: str = "unknown",
     ) -> None:
-        """Soft-delete a medical record.
 
-        Args:
-            record_id: The UUID of the record.
-            user: The authenticated User instance.
-            ip_address: Client IP for audit logging.
-
-        Raises:
-            RecordNotFoundError: If the record does not exist.
-        """
         try:
             record = MedicalRecord.objects.get(pk=record_id)
+
         except MedicalRecord.DoesNotExist:
-            raise RecordNotFoundError(f"Record {record_id} not found.")
+            raise RecordNotFoundError(
+                f"Record {record_id} not found."
+            )
 
         record.soft_delete()
 
@@ -179,4 +186,9 @@ class MedicalRecordService:
             record=record,
             ip_address=ip_address,
         )
-        logger.info("Record %s soft-deleted by %s", record_id, user.username)
+
+        logger.info(
+            "Record %s soft-deleted by %s",
+            record_id,
+            user.username,
+        )

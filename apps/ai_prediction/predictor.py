@@ -1,65 +1,77 @@
-import joblib
+"""
+AI Prediction Engine
 
-from django.conf import settings
+Loads the trained ML model and predicts
+patient health risk.
+"""
+
+from pathlib import Path
+
+import joblib
+import pandas as pd
+
+# ==========================================================
+# Project Paths
+# ==========================================================
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+MODEL_DIR = BASE_DIR / "ml_model"
+
+MODEL_PATH = MODEL_DIR / "trained" / "random_forest.pkl"
+
+FEATURE_COLUMNS_PATH = MODEL_DIR / "encoders" / "feature_columns.pkl"
+
+LABEL_ENCODER_PATH = MODEL_DIR / "encoders" / "label_encoder.pkl"
 
 
 class RiskPredictor:
+    """
+    Loads the trained ML model and performs predictions.
+    """
 
     def __init__(self):
 
-        self.model = joblib.load(settings.RISK_MODEL_PATH)
+        self.model = joblib.load(MODEL_PATH)
 
-        self.gender_encoder = joblib.load(
-            settings.ML_MODEL_DIR / "gender_encoder.pkl"
-        )
+        self.features = joblib.load(FEATURE_COLUMNS_PATH)
 
-        self.risk_encoder = joblib.load(
-            settings.ML_MODEL_DIR / "risk_encoder.pkl"
-        )
+        self.encoder = joblib.load(LABEL_ENCODER_PATH)
 
-    def predict(
-        self,
-        age,
-        gender,
-        heart_rate,
-        systolic_bp,
-        diastolic_bp,
-        temperature,
-        spo2,
-        respiratory_rate,
-        blood_sugar,
-    ):
+    def predict(self, patient_data: dict) -> dict:
+        """
+        Predict patient risk.
 
-        gender = self.gender_encoder.transform([gender])[0]
+        Args:
+            patient_data:
+                Dictionary containing patient vitals.
 
-        prediction = self.model.predict(
-            [[
-                age,
-                gender,
-                heart_rate,
-                systolic_bp,
-                diastolic_bp,
-                temperature,
-                spo2,
-                respiratory_rate,
-                blood_sugar,
-            ]]
-        )[0]
+        Returns:
+            {
+                "risk_level": "...",
+                "confidence": 94.5
+            }
+        """
 
-        risk = self.risk_encoder.inverse_transform([prediction])[0]
+        # Convert dictionary into DataFrame
+        df = pd.DataFrame([patient_data])
 
-        probability = max(self.model.predict_proba(
-            [[
-                age,
-                gender,
-                heart_rate,
-                systolic_bp,
-                diastolic_bp,
-                temperature,
-                spo2,
-                respiratory_rate,
-                blood_sugar,
-            ]]
-        )[0])
+        # Ensure feature order matches training
+        df = df[self.features]
 
-        return risk, probability
+        # Prediction
+        prediction = self.model.predict(df)[0]
+
+        probabilities = self.model.predict_proba(df)[0]
+
+        confidence = float(max(probabilities))
+
+        risk = self.encoder.inverse_transform([prediction])[0]
+
+        return {
+
+            "risk_level": risk,
+
+            "confidence": round(confidence * 100, 2),
+
+        }

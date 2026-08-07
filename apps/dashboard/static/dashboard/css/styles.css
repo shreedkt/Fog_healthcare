@@ -1,751 +1,85 @@
-/* =================================================================
-   Fog Healthcare Dashboard — Main Stylesheet
-   ================================================================= */
-
-/* -----------------------------------------------------------------
-   1. CSS Custom Properties
-   ----------------------------------------------------------------- */
-:root {
-  --fg-primary:     #1a73e8;
-  --fg-primary-rgb: 26, 115, 232;
-  --fg-primary-dk:  #1557b0;
-  --fg-primary-lt:  #e8f0fe;
-
-  --fg-success:     #1e8e3e;
-  --fg-success-lt:  #e6f4ea;
-  --fg-warning:     #f9ab00;
-  --fg-warning-lt:  #fef7e0;
-  --fg-danger:      #d93025;
-  --fg-danger-lt:   #fce8e6;
-
-  --fg-body-bg:     #f0f4f8;
-  --fg-card-bg:     #ffffff;
-  --fg-text:        #202124;
-  --fg-text-muted:  #5f6368;
-  --fg-border:      #dadce0;
-
-  --fg-font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --fg-radius:      .5rem;
-  --fg-radius-lg:   .75rem;
-  --fg-shadow-sm:   0 1px 2px rgba(0, 0, 0, .06), 0 1px 3px rgba(0, 0, 0, .1);
-  --fg-shadow:      0 1px 3px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .05);
-  --fg-shadow-lg:   0 4px 6px rgba(0, 0, 0, .07), 0 12px 28px rgba(0, 0, 0, .08);
-  --fg-transition:  all .2s ease;
-}
-
-
-/* -----------------------------------------------------------------
-   2. Reset & Base
-   ----------------------------------------------------------------- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100%;
-  margin: 0;
-  background: var(--fg-body-bg);
-  color: var(--fg-text);
-  font-family: var(--fg-font-family);
-  font-size: .9375rem;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-/* -----------------------------------------------------------------
-   3. Navbar
-   ----------------------------------------------------------------- */
-.navbar-fog {
-  background: linear-gradient(135deg, var(--fg-primary) 0%, var(--fg-primary-dk) 100%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
-  padding: .625rem 0;
-}
-
-.navbar-fog .navbar-brand {
-  color: #fff !important;
-  font-weight: 700;
-  font-size: 1.125rem;
-  letter-spacing: -.01em;
-}
-
-.navbar-fog .nav-link {
-  color: rgba(255, 255, 255, .85) !important;
-  font-weight: 500;
-  font-size: .875rem;
-  padding: .5rem .875rem;
-  border-radius: var(--fg-radius);
-  transition: var(--fg-transition);
-}
-
-.navbar-fog .nav-link:hover,
-.navbar-fog .nav-link.active {
-  color: #fff !important;
-  background: rgba(255, 255, 255, .12);
-}
-
-.navbar-fog .navbar-text {
-  color: rgba(255, 255, 255, .9) !important;
-  font-size: .875rem;
-}
-
-.navbar-fog .btn-outline-light {
-  font-size: .8125rem;
-  font-weight: 500;
-  border-radius: var(--fg-radius);
-  padding: .3rem .875rem;
-  border-color: rgba(255, 255, 255, .5);
-}
-
-.navbar-fog .btn-outline-light:hover {
-  background: rgba(255, 255, 255, .15);
-  border-color: rgba(255, 255, 255, .8);
-  color: #fff;
-}
-
-.navbar-fog .navbar-toggler {
-  border-color: rgba(255, 255, 255, .3);
-}
-
-.navbar-fog .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-
-/* -----------------------------------------------------------------
-   4. Role Badges
-   ----------------------------------------------------------------- */
-.role-badge {
-  display: inline-block;
-  font-size: .7rem;
-  font-weight: 600;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  padding: .2rem .55rem;
-  border-radius: 3px;
-  line-height: 1.4;
-}
-
-.role-badge--doctor {
-  background: var(--fg-success-lt);
-  color: var(--fg-success);
-}
-
-.role-badge--nurse {
-  background: var(--fg-primary-lt);
-  color: var(--fg-primary);
-}
-
-.role-badge--admin {
-  background: var(--fg-danger-lt);
-  color: var(--fg-danger);
-}
-
-/* Larger variant for the home page */
-.role-badge--lg {
-  font-size: .8rem;
-  padding: .35rem .85rem;
-}
-
-
-/* -----------------------------------------------------------------
-   5. Cards
-   ----------------------------------------------------------------- */
-.fg-card {
-  background: var(--fg-card-bg);
-  border: 1px solid var(--fg-border);
-  border-radius: var(--fg-radius-lg);
-  box-shadow: var(--fg-shadow-sm);
-  transition: var(--fg-transition);
-}
-
-.fg-card:hover {
-  box-shadow: var(--fg-shadow);
-}
-
-.fg-card__header {
-  padding: .875rem 1.25rem;
-  border-bottom: 1px solid var(--fg-border);
-  font-weight: 600;
-  font-size: .875rem;
-  color: var(--fg-text);
-  background: #fafbfc;
-  border-radius: var(--fg-radius-lg) var(--fg-radius-lg) 0 0;
-}
-
-.fg-card__body {
-  padding: 1.25rem;
-}
-
-
-/* -----------------------------------------------------------------
-   6. Stat Cards
-   ----------------------------------------------------------------- */
-.stat-card {
-  background: var(--fg-card-bg);
-  border: 1px solid var(--fg-border);
-  border-left: 4px solid var(--fg-primary);
-  border-radius: var(--fg-radius-lg);
-  box-shadow: var(--fg-shadow-sm);
-  padding: 1.25rem 1.5rem;
-  transition: var(--fg-transition);
-}
-
-.stat-card:hover {
-  box-shadow: var(--fg-shadow);
-  transform: translateY(-1px);
-}
-
-.stat-card__value {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--fg-text);
-  line-height: 1.2;
-}
-
-.stat-card__label {
-  font-size: .8125rem;
-  color: var(--fg-text-muted);
-  margin-top: .25rem;
-}
-
-
-/* -----------------------------------------------------------------
-   7. Tables
-   ----------------------------------------------------------------- */
-.fg-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-.fg-table thead th {
-  background: #f8f9fa;
-  font-size: .75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  color: var(--fg-text-muted);
-  padding: .75rem 1rem;
-  border-bottom: 2px solid var(--fg-border);
-  white-space: nowrap;
-}
-
-.fg-table tbody td {
-  padding: .75rem 1rem;
-  border-bottom: 1px solid #f0f0f0;
-  font-size: .875rem;
-  vertical-align: middle;
-}
-
-.fg-table tbody tr {
-  transition: background .15s ease;
-}
-
-.fg-table tbody tr:hover {
-  background: var(--fg-primary-lt);
-}
-
-.fg-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.fg-table code {
-  background: #f1f3f4;
-  padding: .15rem .4rem;
-  border-radius: 3px;
-  font-size: .8125rem;
-  color: var(--fg-text);
-}
-
-
-/* -----------------------------------------------------------------
-   8. Buttons
-   ----------------------------------------------------------------- */
-.btn-fg-primary {
-  background: var(--fg-primary);
-  color: #fff;
-  border: none;
-  font-weight: 500;
-  font-size: .875rem;
-  padding: .5rem 1.25rem;
-  border-radius: var(--fg-radius);
-  cursor: pointer;
-  transition: var(--fg-transition);
-}
-
-.btn-fg-primary:hover {
-  background: var(--fg-primary-dk);
-  color: #fff;
-  box-shadow: 0 1px 3px rgba(var(--fg-primary-rgb), .3);
-}
-
-.btn-fg-outline {
-  background: transparent;
-  color: var(--fg-primary);
-  border: 1px solid var(--fg-primary);
-  font-weight: 500;
-  font-size: .8125rem;
-  padding: .35rem 1rem;
-  border-radius: var(--fg-radius);
-  cursor: pointer;
-  transition: var(--fg-transition);
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn-fg-outline:hover {
-  background: var(--fg-primary);
-  color: #fff;
-}
-
-.btn-fg-outline--secondary {
-  color: var(--fg-text-muted);
-  border-color: var(--fg-border);
-}
-
-.btn-fg-outline--secondary:hover {
-  background: var(--fg-text-muted);
-  color: #fff;
-  border-color: var(--fg-text-muted);
-}
-
-.btn-fg-sm {
-  font-size: .75rem;
-  padding: .25rem .75rem;
-}
-
-
-/* -----------------------------------------------------------------
-   9. Login Page
-   ----------------------------------------------------------------- */
-.login-wrapper {
-  min-height: calc(100vh - 56px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
-.login-card {
-  width: 100%;
-  max-width: 400px;
-  background: var(--fg-card-bg);
-  border: 1px solid var(--fg-border);
-  border-radius: var(--fg-radius-lg);
-  box-shadow: var(--fg-shadow-lg);
-  overflow: hidden;
-}
-
-.login-card__header {
-  background: linear-gradient(135deg, var(--fg-primary) 0%, var(--fg-primary-dk) 100%);
-  padding: 2rem 2rem 1.5rem;
-  text-align: center;
-  color: #fff;
-}
-
-.login-card__header h1 {
-  font-size: 1.375rem;
-  font-weight: 700;
-  margin: 0 0 .25rem;
-}
-
-.login-card__header p {
-  font-size: .8125rem;
-  opacity: .85;
-  margin: 0;
-}
-
-.login-card__body {
-  padding: 2rem;
-}
-
-.login-card__footer {
-  text-align: center;
-  padding: 0 2rem 1.5rem;
-  font-size: .75rem;
-  color: var(--fg-text-muted);
-}
-
-
-/* -----------------------------------------------------------------
-   10. Forms
-   ----------------------------------------------------------------- */
-.fg-form-label {
-  display: block;
-  font-size: .8125rem;
-  font-weight: 500;
-  color: var(--fg-text);
-  margin-bottom: .35rem;
-}
-
-.fg-form-input {
-  display: block;
-  width: 100%;
-  padding: .5rem .75rem;
-  font-size: .875rem;
-  font-family: inherit;
-  color: var(--fg-text);
-  background: #fff;
-  border: 1px solid var(--fg-border);
-  border-radius: var(--fg-radius);
-  transition: var(--fg-transition);
-  outline: none;
-}
-
-.fg-form-input:focus {
-  border-color: var(--fg-primary);
-  box-shadow: 0 0 0 3px rgba(var(--fg-primary-rgb), .15);
-}
-
-.fg-form-input::placeholder {
-  color: #9aa0a6;
-}
-
-.fg-form-group {
-  margin-bottom: 1.125rem;
-}
-
-
-/* -----------------------------------------------------------------
-   11. Alerts / Messages
-   ----------------------------------------------------------------- */
-.fg-alert {
-  padding: .75rem 1rem;
-  border-radius: var(--fg-radius);
-  font-size: .875rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
-
-.fg-alert--error {
-  background: var(--fg-danger-lt);
-  color: var(--fg-danger);
-  border: 1px solid #f5c6cb;
-}
-
-.fg-alert--success {
-  background: var(--fg-success-lt);
-  color: var(--fg-success);
-  border: 1px solid #b7e1c8;
-}
-
-.fg-alert--warning {
-  background: var(--fg-warning-lt);
-  color: #7c5a00;
-  border: 1px solid #f5e0a0;
-}
-
-.fg-alert__close {
-  margin-left: auto;
-  background: none;
-  border: none;
-  font-size: 1.125rem;
-  cursor: pointer;
-  color: inherit;
-  opacity: .6;
-  padding: 0;
-  line-height: 1;
-}
-
-.fg-alert__close:hover {
-  opacity: 1;
-}
-
-
-/* -----------------------------------------------------------------
-   12. Integrity Warning
-   ----------------------------------------------------------------- */
-.integrity-warning {
-  background: var(--fg-warning-lt);
-  border: 2px solid var(--fg-warning);
-  border-radius: var(--fg-radius-lg);
-  padding: 3rem 2rem;
-  text-align: center;
-  max-width: 540px;
-  margin: 3rem auto;
-}
-
-.integrity-warning__icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.integrity-warning h4 {
-  color: #7c5a00;
-  font-weight: 700;
-  margin-bottom: .75rem;
-}
-
-
-/* -----------------------------------------------------------------
-   13. Vitals Cards
-   ----------------------------------------------------------------- */
-.vital-card {
-  background: var(--fg-card-bg);
-  border: 1px solid var(--fg-border);
-  border-radius: var(--fg-radius);
-  padding: 1.25rem .75rem;
-  text-align: center;
-  transition: var(--fg-transition);
-}
-
-.vital-card:hover {
-  border-color: var(--fg-primary);
-  box-shadow: var(--fg-shadow-sm);
-}
-
-.vital-card__label {
-  font-size: .75rem;
-  font-weight: 500;
-  color: var(--fg-text-muted);
-  text-transform: uppercase;
-  letter-spacing: .03em;
-  margin-bottom: .35rem;
-}
-
-.vital-card__value {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--fg-primary);
-  line-height: 1.2;
-}
-
-.vital-card__unit {
-  font-size: .75rem;
-  color: var(--fg-text-muted);
-  margin-top: .15rem;
-}
-
-
-/* -----------------------------------------------------------------
-   14. Metadata Grid
-   ----------------------------------------------------------------- */
-.meta-card {
-  background: var(--fg-card-bg);
-  border: 1px solid var(--fg-border);
-  border-radius: var(--fg-radius);
-  padding: .875rem 1rem;
-}
-
-.meta-card__label {
-  font-size: .7rem;
-  font-weight: 600;
-  color: var(--fg-text-muted);
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  margin-bottom: .25rem;
-}
-
-.meta-card__value {
-  font-size: .875rem;
-  color: var(--fg-text);
-  word-break: break-all;
-}
-
-.meta-card__value code {
-  background: #f1f3f4;
-  padding: .15rem .4rem;
-  border-radius: 3px;
-  font-size: .8125rem;
+body{
+    background:#F8FAFC;
+    font-family:Inter,Arial,sans-serif;
 }
 
-
-/* -----------------------------------------------------------------
-   15. Architecture Diagram
-   ----------------------------------------------------------------- */
-.arch-node {
-  border: 1px solid var(--fg-border);
-  border-radius: var(--fg-radius);
-  padding: 1.25rem 1rem;
-  text-align: center;
-  height: 100%;
-  transition: var(--fg-transition);
-}
-
-.arch-node:hover {
-  border-color: var(--fg-primary);
-  box-shadow: var(--fg-shadow-sm);
+.sidebar{
+    min-height:100vh;
+    background:#ffffff;
+    border-right:1px solid #E5E7EB;
 }
 
-.arch-node--active {
-  background: var(--fg-primary-lt);
-  border-color: rgba(var(--fg-primary-rgb), .3);
+.sidebar .list-group-item{
+    border:none;
+    border-radius:8px;
+    margin-bottom:6px;
+    color:#374151;
 }
 
-.arch-node__title {
-  font-size: .875rem;
-  font-weight: 600;
-  color: var(--fg-primary);
-  margin-bottom: .5rem;
+.sidebar .list-group-item:hover{
+    background:#EFF6FF;
+    color:#2563EB;
 }
 
-.arch-node__desc {
-  font-size: .8rem;
-  color: var(--fg-text-muted);
-  margin: 0;
-  line-height: 1.5;
+.card{
+    border:none;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
 
-.arch-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--fg-text-muted);
-  font-size: 1.5rem;
+.table-card{
+    border-radius:12px;
+    overflow:hidden;
 }
 
-
-/* -----------------------------------------------------------------
-   16. Security Badge
-   ----------------------------------------------------------------- */
-.security-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: .35rem;
-  background: var(--fg-success-lt);
-  color: var(--fg-success);
-  font-size: .75rem;
-  font-weight: 600;
-  padding: .3rem .65rem;
-  border-radius: 3px;
+.table thead{
+    background:#F3F4F6;
 }
 
-
-/* -----------------------------------------------------------------
-   17. Page Header
-   ----------------------------------------------------------------- */
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-  gap: .75rem;
+.table th{
+    font-weight:600;
 }
 
-.page-header__title {
-  font-size: 1.375rem;
-  font-weight: 700;
-  color: var(--fg-text);
-  margin: 0 0 .15rem;
+.badge-low{
+    background:#DCFCE7;
+    color:#166534;
 }
 
-.page-header__subtitle {
-  font-size: .8125rem;
-  color: var(--fg-text-muted);
-  margin: 0;
+.badge-medium{
+    background:#FEF3C7;
+    color:#92400E;
 }
-
 
-/* -----------------------------------------------------------------
-   18. Content & Layout
-   ----------------------------------------------------------------- */
-.content-wrapper {
-  min-height: calc(100vh - 56px - 52px);
-  padding: 1.75rem 0;
+.badge-high{
+    background:#FEE2E2;
+    color:#991B1B;
 }
 
-
-/* -----------------------------------------------------------------
-   19. Footer
-   ----------------------------------------------------------------- */
-.fg-footer {
-  background: var(--fg-card-bg);
-  border-top: 1px solid var(--fg-border);
-  padding: .875rem 0;
-  text-align: center;
-  font-size: .75rem;
-  color: var(--fg-text-muted);
+.search-box{
+    width:320px;
 }
+.card-header{
 
+    background:#F9FAFB;
 
-/* -----------------------------------------------------------------
-   20. Filter Bar
-   ----------------------------------------------------------------- */
-.filter-bar {
-  background: var(--fg-card-bg);
-  border: 1px solid var(--fg-border);
-  border-radius: var(--fg-radius-lg);
-  padding: .75rem 1.25rem;
-  margin-bottom: 1.25rem;
-}
+    font-weight:600;
 
-.filter-bar .fg-form-input {
-  max-width: 360px;
 }
 
+.table-borderless th{
 
-/* -----------------------------------------------------------------
-   21. Empty State
-   ----------------------------------------------------------------- */
-.empty-state {
-  padding: 3rem 1rem;
-  text-align: center;
-  color: var(--fg-text-muted);
-}
-
-.empty-state__icon {
-  font-size: 2.5rem;
-  margin-bottom: .75rem;
-  opacity: .4;
-}
+    color:#6B7280;
 
-.empty-state__text {
-  font-size: .9rem;
 }
 
+textarea{
 
-/* -----------------------------------------------------------------
-   22. Responsive Tweaks
-   ----------------------------------------------------------------- */
-@media (max-width: 767.98px) {
-  .stat-card__value {
-    font-size: 1.5rem;
-  }
+    font-size:13px;
 
-  .vital-card__value {
-    font-size: 1.375rem;
-  }
+    resize:none;
 
-  .login-card__body {
-    padding: 1.5rem;
-  }
-
-  .page-header {
-    flex-direction: column;
-  }
-
-  .arch-arrow {
-    transform: rotate(90deg);
-    padding: .5rem 0;
-  }
-}
-
-
-/* -----------------------------------------------------------------
-   23. Utility Helpers
-   ----------------------------------------------------------------- */
-.text-mono {
-  font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
 }
-
-.truncate-id {
-  max-width: 140px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: inline-block;
-  vertical-align: bottom;
+#riskChart,
+#trendChart {
+    height: 320px !important;
 }

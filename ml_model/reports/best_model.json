@@ -1,6 +1,5 @@
 {
-    "models_evaluated": 2,
-    "best_model": "Random Forest",
+    "model": "Random Forest",
     "accuracy": 1.0,
     "precision": 1.0,
     "recall": 1.0,

@@ -21,6 +21,18 @@ class MedicalRecord(BaseModel):
     The plaintext is NEVER stored.
     Only encrypted payloads and AI prediction metadata are stored.
     """
+    ai_model_name = models.CharField(
+    max_length=100,
+    blank=True,
+    null=True,
+    help_text="Machine learning model used."
+)
+
+    ai_model_accuracy = models.FloatField(
+    blank=True,
+    null=True,
+    help_text="Model evaluation accuracy."
+)
 
     patient_id = models.UUIDField(
         default=uuid.uuid4,

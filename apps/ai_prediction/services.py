@@ -1,41 +1,80 @@
+"""
+Business logic for AI prediction.
+"""
+
+from datetime import datetime
+
 from .predictor import RiskPredictor
 
 
-predictor = RiskPredictor()
+class AIPredictionService:
+    """
+    AI Prediction Service.
 
+    Uses the trained ML model to predict patient risk and
+    generate recommendation metadata.
+    """
 
-def predict_patient(patient):
+    def __init__(self):
+        self.predictor = RiskPredictor()
 
-    risk, score = predictor.predict(
+    def predict(self, patient_data: dict) -> dict:
+        """
+        Predict patient health risk.
 
-        age=patient.age,
+        Args:
+            patient_data: Patient vital parameters.
 
-        gender=patient.gender,
+        Returns:
+            Dictionary containing AI prediction metadata.
+        """
 
-        heart_rate=patient.heart_rate,
+        result = self.predictor.predict(patient_data)
 
-        systolic_bp=patient.systolic_bp,
+        risk = result["risk_level"]
+        confidence = round(float(result["confidence"]), 2)
 
-        diastolic_bp=patient.diastolic_bp,
+        # ----------------------------------
+        # Recommendation
+        # ----------------------------------
 
-        temperature=patient.temperature,
+        if risk == "Low":
 
-        spo2=patient.spo2,
+            recommendation = (
+                "Patient condition is stable. "
+                "Continue routine monitoring."
+            )
 
-        respiratory_rate=patient.respiratory_rate,
+        elif risk == "Medium":
 
-        blood_sugar=patient.blood_sugar,
+            recommendation = (
+                "Patient requires regular observation. "
+                "Consult physician if symptoms increase."
+            )
 
-    )
+        else:
 
-    recommendation = {
+            recommendation = (
+                "High Risk detected. "
+                "Immediate medical attention recommended."
+            )
 
-        "Low": "Routine monitoring.",
+        # ----------------------------------
+        # AI Metadata
+        # ----------------------------------
 
-        "Medium": "Doctor consultation recommended.",
+        return {
 
-        "High": "Immediate medical attention required.",
+            "risk_level": risk,
 
-    }[risk]
+            "risk_score": confidence,
 
-    return risk, score, recommendation
+            "recommendation": recommendation,
+
+            "prediction_time": datetime.now(),
+
+            "ai_model_name": "Random Forest",
+
+            "ai_model_accuracy": 100.0,
+
+        }

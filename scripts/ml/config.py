@@ -105,3 +105,9 @@ RANDOM_FOREST_REPORT = REPORT_DIR / "random_forest_metrics.json"
 # -------------------------------------------------------
 
 XGBOOST_REPORT = REPORT_DIR / "xgboost_metrics.json"
+
+BEST_MODEL_REPORT = REPORT_DIR / "best_model.json"
+
+MODEL_COMPARISON_CSV = REPORT_DIR / "model_comparison.csv"
+
+FINAL_EVALUATION_REPORT = REPORT_DIR / "evaluation_report.json"

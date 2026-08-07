@@ -1,0 +1,53 @@
+<div class="card mb-4">
+
+    <div class="card-body">
+
+        <h5 class="mb-4">
+
+            AI Prediction Summary
+
+        </h5>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <strong>Model</strong>
+
+                <p>
+
+                    {{ dashboard.ai.model }}
+
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <strong>Accuracy</strong>
+
+                <p>
+
+                    {{ dashboard.ai.accuracy }}%
+
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <strong>Records Analysed</strong>
+
+                <p>
+
+                    {{ dashboard.summary.total_records }}
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
