@@ -1,0 +1,99 @@
+<div class="row g-4 mb-4">
+
+    <div class="col-lg-3">
+
+        <div class="card">
+
+            <div class="card-body">
+
+                <small class="text-muted">
+
+                    Total Records
+
+                </small>
+
+                <h2 class="mt-2">
+
+                    {{ dashboard.summary.total_records }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3">
+
+        <div class="card border-success">
+
+            <div class="card-body">
+
+                <small class="text-muted">
+
+                    Low Risk
+
+                </small>
+
+                <h2 class="mt-2 text-success">
+
+                    {{ dashboard.summary.low_risk }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3">
+
+        <div class="card border-warning">
+
+            <div class="card-body">
+
+                <small class="text-muted">
+
+                    Medium Risk
+
+                </small>
+
+                <h2 class="mt-2 text-warning">
+
+                    {{ dashboard.summary.medium_risk }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3">
+
+        <div class="card border-danger">
+
+            <div class="card-body">
+
+                <small class="text-muted">
+
+                    High Risk
+
+                </small>
+
+                <h2 class="mt-2 text-danger">
+
+                    {{ dashboard.summary.high_risk }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

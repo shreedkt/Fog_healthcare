@@ -1,0 +1,83 @@
+{% extends "dashboard/base.html" %}
+
+{% block title %}
+
+Dashboard
+
+{% endblock %}
+
+{% block content %}
+
+{% include "dashboard/components/summary_cards.html" %}
+
+{% include "dashboard/components/ai_summary.html" %}
+<div class="row mt-4">
+
+    <div class="col-lg-6">
+
+        {% include "dashboard/components/risk_chart.html" %}
+
+    </div>
+
+    <div class="col-lg-6">
+
+        {% include "dashboard/components/trend_chart.html" %}
+
+    </div>
+
+</div>
+{{ dashboard.risk_chart|json_script:"risk-chart-data" }}
+
+{{ dashboard.trend_chart|json_script:"trend-chart-data" }}
+<div class="row">
+
+    <div class="col-lg-8">
+
+        {% include "dashboard/components/recent_records.html" %}
+
+    </div>
+
+    <div class="col-lg-4">
+
+        {% include "dashboard/components/risk_chart.html" %}
+
+    </div>
+
+</div>
+
+{% endblock %}
+{% block extra_js %}
+
+{{ dashboard.risk_chart|json_script:"risk-chart-data" }}
+
+{{ dashboard.trend_chart|json_script:"trend-chart-data" }}
+
+<script>
+
+const riskRaw = JSON.parse(
+    document.getElementById("risk-chart-data").textContent
+);
+
+const trendRaw = JSON.parse(
+    document.getElementById("trend-chart-data").textContent
+);
+
+const riskData = {
+
+    labels: riskRaw.map(item => item.risk_level),
+
+    values: riskRaw.map(item => item.total)
+
+};
+
+const trendData = {
+
+    labels: trendRaw.map(item => item.day),
+
+    values: trendRaw.map(item => item.total)
+
+};
+
+</script>
+
+{% endblock %}
