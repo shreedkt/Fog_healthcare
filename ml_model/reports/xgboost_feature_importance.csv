@@ -1,0 +1,14 @@
+Feature,Importance
+temperature,0.4868074
+bmi,0.48095888
+spo2,0.009726905
+blood_sugar,0.0080480855
+cholesterol,0.0074648345
+respiratory_rate,0.005283389
+smoking,0.0010064901
+age,0.0003416351
+heart_rate,0.00020591692
+diastolic_bp,0.00015651622
+gender,0.0
+systolic_bp,0.0
+exercise_level,0.0

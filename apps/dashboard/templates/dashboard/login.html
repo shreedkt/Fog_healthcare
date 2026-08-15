@@ -1,0 +1,61 @@
+{% extends "dashboard/base.html" %} {% block title %}Sign In{% endblock %} 
+{%block content %}
+<div class="login-wrapper">
+  <div class="login-card">
+    <!-- Header -->
+    <div class="login-card__header">
+      <h1>&#x1F3E5; Fog Healthcare</h1>
+      <p>Secure Fog-Based Data Sharing Platform</p>
+    </div>
+
+    <!-- Body -->
+    <div class="login-card__body">
+      {% if error %}
+      <div class="fg-alert fg-alert--error">&#x26A0;&#xFE0F; {{ error }}</div>
+      {% endif %}
+
+      <form method="post" action="{% url 'dashboard:login' %}" novalidate>
+        {% csrf_token %}
+
+        <div class="fg-form-group">
+          <label for="username" class="fg-form-label">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="fg-form-input"
+            value="{{ submitted_username|default:'' }}"
+            placeholder="Enter your username"
+            autocomplete="username"
+            autofocus
+            required
+          />
+        </div>
+
+        <div class="fg-form-group">
+          <label for="password" class="fg-form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="fg-form-input"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-fg-primary" style="width: 100%">
+          Sign In
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="login-card__footer">
+      Session-based auth &middot; AES-256-CBC &middot; ECC SECP256R1 &middot;
+      SHA-256
+    </div>
+  </div>
+</div>
+{% endblock %}

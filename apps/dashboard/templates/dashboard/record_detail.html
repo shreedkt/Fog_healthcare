@@ -1,0 +1,180 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Record Detail{% endblock %}
+{% block content %} {% if not integrity_ok %}
+<!-- ════════════════════════════════════════════════════════════
+     INTEGRITY FAILURE
+     ════════════════════════════════════════════════════════════ -->
+<div class="integrity-warning">
+  <span class="integrity-warning__icon">&#x26A0;&#xFE0F;</span>
+  <h4>Integrity Verification Failed</h4>
+  <p>
+    The SHA-256 hash of the stored ciphertext does not match the expected value.
+    <br />This record may have been tampered with. Data will
+    <strong>not</strong> be displayed.
+  </p>
+  <p style="margin-bottom: 1.5rem">
+    <strong>Record ID:</strong> <code>{{ record_id }}</code>
+  </p>
+  <a
+    href="{% url 'dashboard:records_list' %}"
+    class="btn-fg-outline btn-fg-outline--secondary"
+  >
+    &larr; Back to Records
+  </a>
+</div>
+
+{% else %}
+<!-- ════════════════════════════════════════════════════════════
+     RECORD HEADER
+     ════════════════════════════════════════════════════════════ -->
+<div class="page-header">
+  <div>
+    <h1 class="page-header__title">Record Detail</h1>
+    <p class="page-header__subtitle">
+      Decrypted with AES-256-CBC &middot; Integrity verified (SHA-256)
+    </p>
+  </div>
+  <a
+    href="{% url 'dashboard:records_list' %}"
+    class="btn-fg-outline btn-fg-outline--secondary btn-fg-sm"
+  >
+    &larr; Back to Records
+  </a>
+</div>
+
+<!-- ── Metadata Grid ───────────────────────────────────────── -->
+<div class="row g-3 mb-4">
+  <div class="col-md-6">
+    <div class="meta-card">
+      <div class="meta-card__label">Record ID</div>
+      <div class="meta-card__value"><code>{{ record.record_id }}</code></div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="meta-card">
+      <div class="meta-card__label">Patient ID</div>
+      <div class="meta-card__value"><code>{{ record.patient_id }}</code></div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="meta-card">
+      <div class="meta-card__label">Submitted By</div>
+      <div class="meta-card__value">{{ record.created_by }}</div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="meta-card">
+      <div class="meta-card__label">Created At</div>
+      <div class="meta-card__value">{{ record.created_at }}</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Decrypted Vitals ────────────────────────────────────── -->
+{% with vitals=record.data.vitals %} {% if vitals %}
+<div class="fg-card mb-4">
+  <div class="fg-card__header">&#x1FA7A; Patient Vitals</div>
+  <div class="fg-card__body">
+    <div class="row g-3">
+      {% if vitals.heart_rate %}
+      <div class="col-6 col-lg-3">
+        <div class="vital-card">
+          <div class="vital-card__label">Heart Rate</div>
+          <div class="vital-card__value">{{ vitals.heart_rate }}</div>
+          <div class="vital-card__unit">bpm</div>
+        </div>
+      </div>
+      {% endif %} {% if vitals.blood_pressure %}
+      <div class="col-6 col-lg-3">
+        <div class="vital-card">
+          <div class="vital-card__label">Blood Pressure</div>
+          <div class="vital-card__value">
+            {{ vitals.blood_pressure.systolic }}/{{ vitals.blood_pressure.diastolic }}
+          </div>
+          <div class="vital-card__unit">mmHg</div>
+        </div>
+      </div>
+      {% endif %} {% if vitals.temperature_celsius %}
+      <div class="col-6 col-lg-3">
+        <div class="vital-card">
+          <div class="vital-card__label">Temperature</div>
+          <div class="vital-card__value">{{ vitals.temperature_celsius }}</div>
+          <div class="vital-card__unit">&deg;C</div>
+        </div>
+      </div>
+      {% endif %} {% if vitals.oxygen_saturation %}
+      <div class="col-6 col-lg-3">
+        <div class="vital-card">
+          <div class="vital-card__label">SpO&#x2082;</div>
+          <div class="vital-card__value">{{ vitals.oxygen_saturation }}%</div>
+          <div class="vital-card__unit">Oxygen Saturation</div>
+        </div>
+      </div>
+      {% endif %} {% if vitals.respiratory_rate %}
+      <div class="col-6 col-lg-3">
+        <div class="vital-card">
+          <div class="vital-card__label">Respiratory Rate</div>
+          <div class="vital-card__value">{{ vitals.respiratory_rate }}</div>
+          <div class="vital-card__unit">breaths/min</div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %} {% endwith %}
+
+<!-- ── Full Decrypted Payload ──────────────────────────────── -->
+<div class="fg-card mb-4">
+  <div class="fg-card__header">&#x1F4CB; Decrypted Payload</div>
+  <div class="fg-card__body" style="padding: 0">
+    <table class="fg-table">
+      <tbody>
+        {% for key, value in record.data.items %}
+        {% if key == "clinical_inputs" %}
+        {% for input in record.clinical_input_rows %}
+        <tr>
+          <td
+            style="width: 200px; font-weight: 500; color: var(--fg-text-muted)"
+          >
+            {{ input.label }}
+          </td>
+          <td>
+            {% if input.value == None or input.value == "" %}
+            <span style="color: var(--fg-text-muted)">--</span>
+            {% else %}{{ input.value }}{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+          <td
+            style="width: 200px; font-weight: 500; color: var(--fg-text-muted)"
+          >
+            {{ key|title }}
+          </td>
+          <td>
+            {% if value == None or value == "" %}
+            <span style="color: var(--fg-text-muted)">--</span>
+            {% else %}{{ value }}{% endif %}
+          </td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── Security Footer ─────────────────────────────────────── -->
+<div style="text-align: center; margin-bottom: 1.5rem">
+  <span class="security-badge"> &#x2705; Integrity Verified </span>
+  <p
+    style="font-size: 0.75rem; color: var(--fg-text-muted); margin-top: 0.5rem"
+  >
+    AES-256-CBC decryption &middot; ECC SECP256R1 key exchange &middot; SHA-256
+    hash match
+  </p>
+</div>
+
+{% endif %} {% endblock %}
